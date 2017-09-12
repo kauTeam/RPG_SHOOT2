@@ -12,6 +12,6 @@ public class Player_shoot : MonoBehaviour {
 
 	public void shoot()
 	{
-		Instantiate (bullet, pos);
+		GameObject tan=Instantiate (bullet, pos.position,pos.rotation);
 	}
 }

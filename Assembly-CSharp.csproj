@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DDA8876D-4903-CE1C-6E88-5FC050551060}</ProjectGuid>
+    <ProjectGuid>{3F282049-7955-9D3F-E88F-1E8AF1F54EA6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,7 +51,7 @@
      <Compile Include="Assets\script\Game\Player_shoot.cs" />
      <Compile Include="Assets\script\Game\joystick.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/jongs/Documents/RPGshoot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/jongs/Documents/RPG_Shoot/RPG_Shoot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
