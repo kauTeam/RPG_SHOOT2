@@ -2,6 +2,8 @@
 
 public class Player_move : MonoBehaviour
 {
+    Animator ani;
+
     public joystick stick;   //조이스틱 스크립트
     public float MoveSpeed;     //플레이어 이동속도
 
@@ -12,6 +14,8 @@ public class Player_move : MonoBehaviour
     {
         _transform = transform;      //Transform 캐싱
         _moveVector = Vector3.zero;  //플레이어 이동벡터 초기화
+
+        ani = GetComponent<Animator>();
     }
 
     void Update()
@@ -43,5 +47,7 @@ public class Player_move : MonoBehaviour
     public void Move()
     {
 		_transform.Translate(_moveVector * MoveSpeed * Time.deltaTime*Time.timeScale);
+        ani.SetFloat("move_x", _moveVector.x);
+        ani.SetFloat("move_y", _moveVector.z);
     }
 }
