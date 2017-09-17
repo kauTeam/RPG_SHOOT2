@@ -46,12 +46,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\script\Game\Player_Bullet.cs" />
-     <Compile Include="Assets\script\Game\Player_move.cs" />
-     <Compile Include="Assets\script\Game\Player_shoot.cs" />
-     <Compile Include="Assets\script\Game\joystick.cs" />
+     <Compile Include="Assets\script\Game\Monster\Bullet\Bullet.cs" />
+     <Compile Include="Assets\script\Game\Monster\Monster_Move.cs" />
+     <Compile Include="Assets\script\Game\Monster\Monster_Shoot.cs" />
+     <Compile Include="Assets\script\Game\Monster\Monster_Status.cs" />
+     <Compile Include="Assets\script\Game\Player\Player_Bullet.cs" />
+     <Compile Include="Assets\script\Game\Player\Player_Status.cs" />
+     <Compile Include="Assets\script\Game\Player\Player_move.cs" />
+     <Compile Include="Assets\script\Game\Player\Player_shoot.cs" />
+     <Compile Include="Assets\script\Game\UI\joystick.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/jongs/Documents/RPG_Shoot/RPG_Shoot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/jongs/Documents/RPG_Shoot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
