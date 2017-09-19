@@ -54,6 +54,7 @@
      <Compile Include="Assets\script\Game\Player\Player_Status.cs" />
      <Compile Include="Assets\script\Game\Player\Player_move.cs" />
      <Compile Include="Assets\script\Game\Player\Player_shoot.cs" />
+     <Compile Include="Assets\script\Game\UI\User_HP_Bar.cs" />
      <Compile Include="Assets\script\Game\UI\joystick.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

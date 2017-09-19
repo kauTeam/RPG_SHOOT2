@@ -10,6 +10,8 @@ public class Monster_Shoot : MonoBehaviour {
 
 	public Transform shoot_pos = null;
 	public Transform target_pos = null;
+	float target_x;
+	float target_z;
 	public float attack_speed=1f;
 	public int damage=20;
 	public int speed = 1;
@@ -432,13 +434,15 @@ public class Monster_Shoot : MonoBehaviour {
 
 	IEnumerator lockOn_bullet(int speed,float delay)
 	{
+		if (target_pos != null) {
+			target_x = target_pos.position.x;
+			target_z = target_pos.position.z;
+		}
 		yield return new WaitForSeconds (delay);
 		GameObject tan=Instantiate (miss1, shoot_pos.position, shoot_pos.rotation);
 		tan.GetComponent<Bullet>().setType (24);
 		tan.GetComponent<Bullet>().setDamage (damage);
-		tan.GetComponent<Bullet> ().setTarget (target_pos.position.x, target_pos.position.z);
-		print (target_pos.position.x);
-		print (target_pos.position.z);
+		tan.GetComponent<Bullet> ().setTarget (target_x, target_z);
 		tan.GetComponent<Bullet> ().setSpeed (tan_speed[speed]);
 	}
 

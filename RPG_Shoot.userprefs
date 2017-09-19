@@ -1,12 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Game\Player\Player_shoot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Game\Monster\Monster_Shoot.cs">
     <Files>
-      <File FileName="Assets\script\Game\Player\Player_Status.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Game\Monster\Bullet\Bullet.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Game\Monster\Monster_Shoot.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Game\Monster\Monster_Status.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Game\Player\Player_shoot.cs" Line="22" Column="3" />
+      <File FileName="Assets\script\Game\Player\Player_Status.cs" Line="49" Column="5" />
+      <File FileName="..\shooting-game\Assets\player\user_hpbar.cs" Line="7" Column="1" />
+      <File FileName="Assets\script\Game\UI\User_HP_Bar.cs" Line="15" Column="27" />
+      <File FileName="Assets\script\Game\Monster\Monster_Shoot.cs" Line="445" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
