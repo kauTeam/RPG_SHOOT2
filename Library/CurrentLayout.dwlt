@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 23
+  controlID: 48
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 24
+  controlID: 12
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -255,8 +255,8 @@ MonoBehaviour:
     y: 0
     width: 329
     height: 715
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -365,14 +365,14 @@ MonoBehaviour:
     width: 669
     height: 316
   m_SceneLighting: 1
-  lastFramingTime: 896.0339280042331
+  lastFramingTime: 1196.977953014909
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 128.85022, y: 290, z: 0}
+    m_Target: {x: 46.21693, y: -47.40432, z: 31.3813}
     speed: 2
-    m_Value: {x: 128.85022, y: 290, z: 0}
+    m_Value: {x: 46.21693, y: -47.40432, z: 31.3813}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -395,13 +395,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0033012435, y: -0.079419866, z: 0.00024549515, w: 0.9968444}
+    m_Target: {x: 0.02631607, y: -0.16625671, z: -0.004432481, w: -0.9857358}
     speed: 2
-    m_Value: {x: -0.0033012435, y: 0.079419866, z: -0.00024549515, w: -0.9968444}
+    m_Value: {x: 0.026315698, y: -0.16625436, z: -0.004432418, w: -0.98572177}
   m_Size:
-    m_Target: 233.34525
+    m_Target: 234.51488
     speed: 2
-    m_Value: 233.34525
+    m_Value: 234.51488
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -494,20 +494,20 @@ MonoBehaviour:
     height: 694
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c42a0000
-    m_LastClickedID: 10948
-    m_ExpandedIDs: dcb6ffff52faffffcefbffff00000000022b0000282b0000742b0000782b0000982b0000
+    m_SelectedIDs: f2280000
+    m_LastClickedID: 10482
+    m_ExpandedIDs: 6ee6fffff0e7ffff56eaffff6cf0ffff90f3ffff78f6ffffcefbffff00000000d2280000f2280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Image
-      m_OriginalName: Image
+      m_Name: HP_bar (1)
+      m_OriginalName: HP_bar (1)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -21722
+      m_UserData: -6546
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -556,18 +556,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/scene
+    - Assets/script/Game/Monster
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/scene
+  - Assets/script/Game/Monster
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jongs\Documents\RPG_Shoot
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fa260000
-    m_LastClickedID: 9978
+    m_SelectedIDs: 40270000
+    m_LastClickedID: 10048
     m_ExpandedIDs: 0000000058250000d02500002a260000402700006a27000096270000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0

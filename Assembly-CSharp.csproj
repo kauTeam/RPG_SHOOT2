@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\script\Game\Monster\Bullet\Bullet.cs" />
+     <Compile Include="Assets\script\Game\Monster\Monster_HP_bar.cs" />
      <Compile Include="Assets\script\Game\Monster\Monster_Move.cs" />
      <Compile Include="Assets\script\Game\Monster\Monster_Shoot.cs" />
      <Compile Include="Assets\script\Game\Monster\Monster_Status.cs" />
