@@ -19,7 +19,7 @@ public class Monster_Move : MonoBehaviour {
 	void Update () {
 		if (this.transform.position.x >movePoint_x+1||this.transform.position.x <movePoint_x-1) {
 			if (this.transform.position.x > movePoint_x) {
-				this.transform.Translate (new Vector3 (1, 0, 0) * -1 * speed * Time.deltaTime);
+				this.transform.Translate (new Vector3 (1, 0, 0) * -1 * speed * Time.deltaTime*Time.timeScale);
 			}
 			if (this.transform.position.x < movePoint_x) {
 				this.transform.Translate
@@ -31,7 +31,7 @@ public class Monster_Move : MonoBehaviour {
 
 		if (this.transform.position.z >movePoint_z+1||this.transform.position.z <movePoint_z-1) {
 			if (this.transform.position.z > movePoint_z) {
-				this.transform.Translate (new Vector3 (0, 0, 1) * -1 * speed * Time.deltaTime);
+				this.transform.Translate (new Vector3 (0, 0, 1) * -1 * speed * Time.deltaTime*Time.timeScale);
 			}
 			if (this.transform.position.z < movePoint_z) {
 				this.transform.Translate

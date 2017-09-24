@@ -22,66 +22,66 @@ public class Bullet : MonoBehaviour {
 
 		//직선탄
 		if (type == 1) {
-			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 
 		// 대각탄
 		if (type == 2) {
-			this.transform.Translate (new Vector3 (-0.2f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.2f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 3) {
-			this.transform.Translate (new Vector3 (0.2f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.2f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 4) {
-			this.transform.Translate (new Vector3 (-0.4f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.4f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 5) {
-			this.transform.Translate (new Vector3 (0.4f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.4f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 6) {
-			this.transform.Translate (new Vector3 (-0.6f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.6f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 7) {
-			this.transform.Translate (new Vector3 (0.6f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.6f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 8) {
-			this.transform.Translate (new Vector3 (-0.8f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.8f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 9) {
-			this.transform.Translate (new Vector3 (0.8f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.8f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 10) {
-			this.transform.Translate (new Vector3 (-1, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-1, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 11) {
-			this.transform.Translate (new Vector3 (1, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (1, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 12) {
-			this.transform.Translate (new Vector3 (-0.2f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.2f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 13) {
-			this.transform.Translate (new Vector3 (0.2f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.2f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 14) {
-			this.transform.Translate (new Vector3 (-0.4f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.4f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 15) {
-			this.transform.Translate (new Vector3 (0.4f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.4f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 16) {
-			this.transform.Translate (new Vector3 (-0.6f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.6f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 17) {
-			this.transform.Translate (new Vector3 (0.6f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.6f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 18) {
-			this.transform.Translate (new Vector3 (-0.8f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.8f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 19) {
-			this.transform.Translate (new Vector3 (0.8f, 0, 1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.8f, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 20) {
-			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 			if (this.transform.position.z<15&&this.transform.position.z>14.7f) {
 
 				for (int i = 0; i < 19; i++) {
@@ -94,7 +94,7 @@ public class Bullet : MonoBehaviour {
 		}
 
 		if (type == 21) {
-			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 			if (this.transform.position.z<5&&this.transform.position.z>4.8f) {
 
 				for (int i = 10; i < 19; i++) {
@@ -107,7 +107,7 @@ public class Bullet : MonoBehaviour {
 		}
 
 		if (type == 22) {
-			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 			if (this.transform.position.z<10&&this.transform.position.z>9.6f) {
 
 				for (int i = 0; i < 6; i++) {
@@ -120,39 +120,39 @@ public class Bullet : MonoBehaviour {
 		}
 
 		if (type == 24) {
-			this.transform.Translate (new Vector3 (direction, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (direction, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 
 
 		if (type == 31) {
-			this.transform.Translate (new Vector3 (-0.1f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.1f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 32) {
-			this.transform.Translate (new Vector3 (0.1f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.1f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 33) {
-			this.transform.Translate (new Vector3 (-0.3f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.3f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 34) {
-			this.transform.Translate (new Vector3 (0.3f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.3f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 35) {
-			this.transform.Translate (new Vector3 (-0.5f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.5f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 36) {
-			this.transform.Translate (new Vector3 (0.5f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.5f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 37) {
-			this.transform.Translate (new Vector3 (-0.7f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.7f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 38) {
-			this.transform.Translate (new Vector3 (0.7f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.7f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 39) {
-			this.transform.Translate (new Vector3 (-0.9f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (-0.9f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 		if (type == 40) {
-			this.transform.Translate (new Vector3 (0.9f, 0, -1) * speed * Time.deltaTime);
+			this.transform.Translate (new Vector3 (0.9f, 0, -1) * speed * Time.deltaTime*Time.timeScale);
 		}
 
 

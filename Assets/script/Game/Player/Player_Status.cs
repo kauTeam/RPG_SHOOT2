@@ -1,21 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player_Status : MonoBehaviour {
 
-
+	public Text count_text;
 	public int Max_HP;
 	public int Max_MP;
 	int Now_HP;
 	int Now_Mp;
 	public int Mp_Recover;
+	public int count;
+	public int Heal_HP;
+	public int Heal_MP;
 	bool Mp_Cover_state=true;
 	// Use this for initialization
 	void Start () {
 		Now_HP = Max_HP;
 		Now_Mp = Max_MP;
-		
+		count_text = count_text.GetComponent<Text> ();
 	}
 	
 	// Update is called once per frame
@@ -29,6 +33,7 @@ public class Player_Status : MonoBehaviour {
 			}
 			
 		}
+		count_text.text = count.ToString ();
 	}
 
 	void MP_Cover()
@@ -68,4 +73,19 @@ public class Player_Status : MonoBehaviour {
 	}
 
 
+	public void use()
+	{
+		if (count>0) {
+			count--;
+			Now_HP += Heal_HP;
+			if (Now_HP > Max_HP) {
+				Now_HP = Max_HP;
+			}
+
+			Now_Mp+= Heal_MP;
+			if ( Now_Mp > Max_MP) {
+				Now_Mp = Max_MP;
+			}
+		}
+	}
 }
