@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class Monster_Move : MonoBehaviour {
 
-
-	int movePoint_x;
+    Animator ani;
+    int movePoint_x;
 	int movePoint_z;
+    public Transform monster_pos;
 	public int speed=1;
 	// Use this for initialization
 	void Start () {
 		movePoint_x = Random.Range (-37,37);
 		movePoint_z = Random.Range (24,33);
-	
-	}
+
+        ani = GetComponent<Animator>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -40,6 +42,8 @@ public class Monster_Move : MonoBehaviour {
 		} else {
 			movePoint_z = Random.Range (24,33);
 		}
-		
-	}
+
+        ani.SetFloat("mv_x", monster_pos.position.x);
+        ani.SetFloat("mv_z", monster_pos.position.z);
+    }
 }
