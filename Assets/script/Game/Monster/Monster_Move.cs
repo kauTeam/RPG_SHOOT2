@@ -11,8 +11,8 @@ public class Monster_Move : MonoBehaviour {
 	public int speed=1;
 	// Use this for initialization
 	void Start () {
-		movePoint_x = Random.Range (-37,37);
-		movePoint_z = Random.Range (24,33);
+		movePoint_x = Random.Range (-23,23);
+		movePoint_z = Random.Range (21,24);
 
         ani = GetComponent<Animator>();
     }
@@ -28,7 +28,7 @@ public class Monster_Move : MonoBehaviour {
 				(new Vector3 (1, 0, 0) * speed * Time.deltaTime*Time.timeScale);
 			}
 		} else {
-			movePoint_x = Random.Range (-37,37);
+			movePoint_x = Random.Range (-23,23);
 		}
 
 		if (this.transform.position.z >movePoint_z+1||this.transform.position.z <movePoint_z-1) {
@@ -40,7 +40,7 @@ public class Monster_Move : MonoBehaviour {
 				(new Vector3 (0, 0, 1) * speed * Time.deltaTime*Time.timeScale);
 			}
 		} else {
-			movePoint_z = Random.Range (24,33);
+			movePoint_z = Random.Range (21,24);
 		}
 
         ani.SetFloat("mv_x", monster_pos.position.x);

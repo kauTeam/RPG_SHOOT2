@@ -39,6 +39,26 @@ public class Player_move : MonoBehaviour
     {
         float h = stick.GetHorizontalValue();
         float v = stick.GetVerticalValue();
+
+        if(this.transform.position.z>17&&v>0)
+        {
+            v = 0f;
+        }
+        if (this.transform.position.z < -7 && v < 0)
+        {
+            v = 0f;
+        }
+
+        if (this.transform.position.x > 21 && h > 0)
+        {
+            h = 0f;
+        }
+        if (this.transform.position.x < -21 && h < 0)
+        {
+            h = 0f;
+        }
+
+
         Vector3 moveDir = new Vector3(h, 0, v).normalized;
 
         return moveDir;
