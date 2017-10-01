@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class AR_Cube_Bullet : MonoBehaviour {
 
     public float speed = 13f;
@@ -22,7 +23,9 @@ public class AR_Cube_Bullet : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if(this.transform.position.x == 0)
+        
+
+        if (this.transform.position.x == 0)
         {
             if(this.transform.position.z >= 0)
                 this.transform.Translate(new Vector3(0, 0, -1) * speed * Time.deltaTime * Time.timeScale);
@@ -56,6 +59,7 @@ public class AR_Cube_Bullet : MonoBehaviour {
             }
         }
 
+
     }
     public void setSpeed(int x)
 
@@ -74,5 +78,11 @@ public class AR_Cube_Bullet : MonoBehaviour {
     {
         this.transform.localScale += new Vector3(x, y, z);
     }
+    public void OnMouseDown()
+    {
+        // this object was clicked - do something
+        Destroy(this.gameObject);
+    }
+
 }
 
