@@ -125,6 +125,10 @@
     <Compile Include="Assets\Vuforia\Scripts\WireframeBehaviour.cs" />
     <Compile Include="Assets\Vuforia\Scripts\WireframeTrackableEventHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
+    <Compile Include="Assets\script\Game\AR\AR_Player.cs" />
+    <Compile Include="Assets\script\Game\AR\Cube\AR_Cube_Bullet.cs" />
+    <Compile Include="Assets\script\Game\AR\Cube\Cube_Shoot.cs" />
+    <Compile Include="Assets\script\Game\AR\Cube\Cube_Type.cs" />
     <Compile Include="Assets\script\Game\Monster\Bullet\Bullet.cs" />
     <Compile Include="Assets\script\Game\Monster\Monster_HP_bar.cs" />
     <Compile Include="Assets\script\Game\Monster\Monster_Move.cs" />
