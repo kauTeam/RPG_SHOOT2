@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/scene/Stat.unity
+=======
+- path: Assets/scene/AR.unity
+>>>>>>> 2e5a62141825d7243eb0b4672a51f8340b19e822
   isLoaded: 1
   isActive: 1
