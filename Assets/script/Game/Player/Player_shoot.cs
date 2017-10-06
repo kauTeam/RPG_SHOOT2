@@ -11,15 +11,24 @@ public class Player_shoot : MonoBehaviour {
 	int Now_tan=35;
 	public int damage;
 	public float speed;
-	public float reroad_delay=1f;
+	float reroad_delay=1.5f;
 	public GameObject reroad_text;
 	public Text bullet_text;
 	bool shoot_state=true;
 	// Use this for initialization
 
 
+
 	void Awake()
 	{
+		Max_tan = PlayerPrefs.GetInt ("bullet_count");
+		damage = PlayerPrefs.GetInt ("damage");
+
+
+
+
+
+
 		Now_tan = Max_tan;
 		bullet_text = bullet_text.GetComponent<Text> ();
 		bullet_text.text = Now_tan.ToString () + " / " + Max_tan.ToString ();

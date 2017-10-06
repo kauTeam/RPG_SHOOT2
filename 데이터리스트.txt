@@ -1,0 +1,29 @@
+데이터 리스트
+
+
+1. 스텟 리스트
+
+   -탄창 bullet_count int
+   -공격력 damage int
+   -최대체력 hp int
+   -최대마나 mp int
+   -마나 회복량 mp_recover int
+
+   -맥스탄창 max_bullet_count int
+   -맥스공격력 max_damage int
+   -맥스최대체력max_hp int
+   -맥스최대마나 max_mp int
+   -맥스마나 회복량 max_mp_recover int
+
+   -사용 가능한 스탯량 useful_stat int
+
+2. 정보 리스트
+  
+   -가진 유물 treasure string
+   -클리어한 스테이지 stage int
+   -가진 캐릭터 character_have string
+   -레벨 level int
+   -경험치exp int
+   -현재 내 캐릭터 now_character int
+   -돈 money
+   

@@ -17,6 +17,9 @@ public class Player_Status : MonoBehaviour {
 	bool Mp_Cover_state=true;
 	// Use this for initialization
 	void Start () {
+		Max_HP = PlayerPrefs.GetInt ("hp");
+		Max_MP = PlayerPrefs.GetInt ("mp");
+		Mp_Recover = PlayerPrefs.GetInt ("mp_recover");
 		Now_HP = Max_HP;
 		Now_Mp = Max_MP;
 		count_text = count_text.GetComponent<Text> ();

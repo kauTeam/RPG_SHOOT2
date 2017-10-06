@@ -12,12 +12,10 @@ public class Game_control : MonoBehaviour {
 	public GameObject win;
 	public GameObject lose;
 	public int stage;
-	public int level;
 	public int gold;
 	public int exp;
 	public Text gold_text;
 	public Text exp_text;
-
 
 	// Use this for initialization
 	void Start () {
@@ -41,7 +39,16 @@ public class Game_control : MonoBehaviour {
 				win.SetActive (true);
 				gold_text.text=gold.ToString()+" GOLD";
 				exp_text.text=exp.ToString()+" EXP";
-							
+				int save;
+				save = PlayerPrefs.GetInt ("exp");
+				int lv=PlayerPrefs.GetInt ("level");
+				save += exp;
+				if (save > lv * 10) {
+					save -= (lv * 10);
+					PlayerPrefs.SetInt ("level", lv + 1);
+					PlayerPrefs.SetInt ("exp", save);
+				}
+				PlayerPrefs.SetInt ("stage", stage);
 			}
 			
 		}

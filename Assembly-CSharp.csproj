@@ -53,20 +53,29 @@
      <Compile Include="Assets\script\Game\Monster\Monster_Status.cs" />
      <Compile Include="Assets\script\Game\Player\Player_Bullet.cs" />
      <Compile Include="Assets\script\Game\Player\Player_Status.cs" />
+     <Compile Include="Assets\script\Game\Player\Player_control.cs" />
      <Compile Include="Assets\script\Game\Player\Player_move.cs" />
      <Compile Include="Assets\script\Game\Player\Player_shoot.cs" />
      <Compile Include="Assets\script\Game\Player\SKill_cool_down.cs" />
+     <Compile Include="Assets\script\Game\Player\Set_Player.cs" />
      <Compile Include="Assets\script\Game\UI\Game_control.cs" />
      <Compile Include="Assets\script\Game\UI\Potion.cs" />
      <Compile Include="Assets\script\Game\UI\User_HP_Bar.cs" />
      <Compile Include="Assets\script\Game\UI\joystick.cs" />
      <Compile Include="Assets\script\Game\UI\stop.cs" />
+     <Compile Include="Assets\script\Main\Reset.cs" />
+     <Compile Include="Assets\script\Main\character_main.cs" />
+     <Compile Include="Assets\script\Main\txt\level.cs" />
+     <Compile Include="Assets\script\Main\txt\money.cs" />
+     <Compile Include="Assets\script\Stat\character.cs" />
+     <Compile Include="Assets\script\Stat\txt\name.cs" />
+     <Compile Include="Assets\script\Stat\txt\stat_txt.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/종설/RPG_Shoot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/jongs/Documents/RPG_Shoot/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -88,6 +97,12 @@
  </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
