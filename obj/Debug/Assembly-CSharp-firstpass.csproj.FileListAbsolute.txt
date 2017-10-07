@@ -32,3 +32,5 @@ C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\jongs\Documents\RPG_Shoot\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\jongs\Documents\RPG_Shoot\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\jongs\Documents\RPG_Shoot\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\Vuforia.UnityExtensions.dll
+C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\Vuforia.UnityExtensions.xml
