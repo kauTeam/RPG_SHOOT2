@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class Set_Player : MonoBehaviour {
 
-	public GameObject[] character = new GameObject[3];
 
 	// Use this for initialization
 	void Start () {
 		int now_character = PlayerPrefs.GetInt ("now_character");
-		for (int i = 0; i < character.Length; i++) {
-			character [i].SetActive (false);
-			if (i == now_character) {
-				character [i].SetActive (true);
-			}
-		}
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        this.gameObject.transform.Find(now_character.ToString()).gameObject.SetActive(true);
+
+
+
+    }
+    void Awake()
+    {
+        int now_character = PlayerPrefs.GetInt("now_character");
+        this.gameObject.transform.Find(now_character.ToString()).gameObject.SetActive(true);
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }
