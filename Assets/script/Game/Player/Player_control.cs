@@ -65,7 +65,10 @@ public class Player_control : MonoBehaviour {
 	public void reroad()
 	{
 		this.transform.Find (character.ToString ()).gameObject.GetComponent<Player_shoot> ().reroad ();
-		
 	}
 
+   /* void Update()
+    {
+        this.transform.position = this.transform.Find(character.ToString()).gameObject.transform.position;
+    }*/
 }

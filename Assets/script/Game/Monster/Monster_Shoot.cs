@@ -7,9 +7,12 @@ public class Monster_Shoot : MonoBehaviour {
 
 
 	public GameObject miss1 = null;
+    public GameObject target = null;
 
-	public Transform shoot_pos = null;
-	public Transform target_pos = null;
+
+    public Transform shoot_pos = null;
+    int character;
+    Transform target_pos = null;
 	float target_x;
 	float target_z;
 	public float attack_speed=1f;
@@ -32,12 +35,13 @@ public class Monster_Shoot : MonoBehaviour {
 				type_count++;
 			}
 		}
-	}
+        character = PlayerPrefs.GetInt("now_character");
+    }
 	// Use this for initialization
 	void Start () {
-		
-		
-	}
+        character = PlayerPrefs.GetInt("now_character");
+
+    }
 	
 	void Update () 
 	{
@@ -434,7 +438,9 @@ public class Monster_Shoot : MonoBehaviour {
 
 	IEnumerator lockOn_bullet(int speed,float delay)
 	{
-		if (target_pos != null) {
+        target_pos=target.transform.Find(character.ToString()).gameObject.transform;
+
+        if (target_pos != null) {
 			target_x = target_pos.position.x;
 			target_z = target_pos.position.z;
 		}
