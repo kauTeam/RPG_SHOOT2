@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/scene/Game_prototype.unity
-=======
-- path: Assets/scene/shop.unity
->>>>>>> 4ab82e7b34f8992e293007df1700ca55fc247018
+- path: Assets/scene/Stat.unity
   isLoaded: 1
   isActive: 1
