@@ -67,3 +67,5 @@ C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\UnityEngine.VR.xml
 C:\Users\jongs\Documents\RPG_Shoot\obj\Debug\Assembly-CSharp.pdb
 C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\Vuforia.UnityExtensions.dll
+C:\Users\jongs\Documents\RPG_Shoot\Temp\bin\Debug\Vuforia.UnityExtensions.xml

@@ -23,19 +23,19 @@ public class Reset : MonoBehaviour {
 		}
 
 		if (!PlayerPrefs.HasKey ("max_bullet_count")) {
-			PlayerPrefs.SetInt ("max_bullet_count", 10);
+			PlayerPrefs.SetInt ("max_bullet_count", 15);
 		}
 		if (!PlayerPrefs.HasKey ("max_damage")) {
-			PlayerPrefs.SetInt ("max_damage", 1);
+			PlayerPrefs.SetInt ("max_damage", 5);
 		}
 		if (!PlayerPrefs.HasKey ("max_hp")) {
-			PlayerPrefs.SetInt ("max_hp", 30);
+			PlayerPrefs.SetInt ("max_hp", 55);
 		}
 		if (!PlayerPrefs.HasKey ("max_mp")) {
-			PlayerPrefs.SetInt ("max_mp", 20);
+			PlayerPrefs.SetInt ("max_mp", 45);
 		}
 		if (!PlayerPrefs.HasKey ("max_mp_recover")) {
-			PlayerPrefs.SetInt ("max_mp_recover", 1);
+			PlayerPrefs.SetInt ("max_mp_recover", 5);
 		}
 
 		if (!PlayerPrefs.HasKey ("useful_stat")) {
@@ -80,13 +80,13 @@ public class Reset : MonoBehaviour {
 		PlayerPrefs.SetInt ("mp", 20);
 		PlayerPrefs.SetInt ("mp_recover", 1);
 
-		PlayerPrefs.SetInt ("max_bullet_count", 10);
-		PlayerPrefs.SetInt ("max_damage", 1);
-		PlayerPrefs.SetInt ("max_hp", 30);
-		PlayerPrefs.SetInt ("max_mp", 20);
-		PlayerPrefs.SetInt ("max_mp_recover", 1);
+		PlayerPrefs.SetInt ("max_bullet_count", 15);
+		PlayerPrefs.SetInt ("max_damage", 5);
+		PlayerPrefs.SetInt ("max_hp", 55);
+		PlayerPrefs.SetInt ("max_mp", 45);
+		PlayerPrefs.SetInt ("max_mp_recover", 5);
 
-		PlayerPrefs.SetInt ("useful_stat", 1);
+		PlayerPrefs.SetInt ("useful_stat", 30);
 
 		PlayerPrefs.SetString ("treasure","");
 		PlayerPrefs.SetInt ("stage", 101);

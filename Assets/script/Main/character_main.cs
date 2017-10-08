@@ -20,6 +20,13 @@ public class character_main : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
+		now_character = PlayerPrefs.GetInt ("now_character");
+		for (int i = 0; i < characters.Length; i++) {
+			characters [i].SetActive (false);
+			if (i == now_character) {
+				characters [i].SetActive (true);
+
+			}
+		}
 	}
 }
