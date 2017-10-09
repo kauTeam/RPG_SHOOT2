@@ -24,7 +24,6 @@ public class Monster_Status : MonoBehaviour {
 	{
 
 		if (tan.tag == "player_bullet") {
-
 			Now_HP -= tan.gameObject.GetComponent<Player_Bullet> ().getDamage ();
 			Destroy (tan.gameObject);
 			print (Now_HP);
