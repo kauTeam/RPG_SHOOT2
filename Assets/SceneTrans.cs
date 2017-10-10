@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class SceneTrans : MonoBehaviour {
 
+	public void Trans_Main()
+	{
+		Application.LoadLevel ("Main");
+	}
+
     public void Trans_Dungun()
     {
         Application.LoadLevel("Game_prototype");
