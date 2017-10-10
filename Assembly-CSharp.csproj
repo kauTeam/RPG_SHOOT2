@@ -108,6 +108,7 @@
      <Compile Include="Assets\script\Main\stat_button_control.cs" />
      <Compile Include="Assets\script\Main\txt\level.cs" />
      <Compile Include="Assets\script\Main\txt\money.cs" />
+     <Compile Include="Assets\script\Stat\Skill_img_control.cs" />
      <Compile Include="Assets\script\Stat\character.cs" />
      <Compile Include="Assets\script\Stat\character_button.cs" />
      <Compile Include="Assets\script\Stat\txt\name.cs" />
