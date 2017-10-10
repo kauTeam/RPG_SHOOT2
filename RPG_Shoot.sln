@@ -1,13 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot.Plugins", "RPG_Shoot.Plugins.csproj", "{C1AA2788-9BB6-B301-7A62-E7C27679C812}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot", "Assembly-CSharp-firstpass.csproj", "{A7F457A7-B161-50AF-6E43-8D7CD629F36D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot", "RPG_Shoot.csproj", "{80E196FF-5538-7E98-ADC8-3AEF5796DBB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot", "Assembly-CSharp.csproj", "{3F282049-7955-9D3F-E88F-1E8AF1F54EA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot.Editor.Plugins", "RPG_Shoot.Editor.Plugins.csproj", "{2868C095-CA77-31F7-7233-6A4A64B5E1BE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot", "Assembly-CSharp-Editor-firstpass.csproj", "{86FD16D3-42F6-F1E5-CB43-A7293D6EA949}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot.Editor", "RPG_Shoot.Editor.csproj", "{121162FE-5BD6-02F5-85D7-1613547B68E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_Shoot", "Assembly-CSharp-Editor.csproj", "{03287DC3-DF66-3AC3-3B31-F9B973E28573}"
 EndProject
 Project("{B2468DDA-1BF0-51E9-0339-B797A5870378}") = "RPG_Shoot", "Assembly-UnityScript-Editor-firstpass.unityproj", "{CAD4AB40-EEE1-FD30-4D4F-5DF88F20DFAF}"
 EndProject
@@ -17,7 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
 		{A7F457A7-B161-50AF-6E43-8D7CD629F36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A7F457A7-B161-50AF-6E43-8D7CD629F36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7F457A7-B161-50AF-6E43-8D7CD629F36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -38,26 +37,11 @@ Global
 		{CAD4AB40-EEE1-FD30-4D4F-5DF88F20DFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAD4AB40-EEE1-FD30-4D4F-5DF88F20DFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAD4AB40-EEE1-FD30-4D4F-5DF88F20DFAF}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{C1AA2788-9BB6-B301-7A62-E7C27679C812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1AA2788-9BB6-B301-7A62-E7C27679C812}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1AA2788-9BB6-B301-7A62-E7C27679C812}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C1AA2788-9BB6-B301-7A62-E7C27679C812}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80E196FF-5538-7E98-ADC8-3AEF5796DBB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80E196FF-5538-7E98-ADC8-3AEF5796DBB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80E196FF-5538-7E98-ADC8-3AEF5796DBB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80E196FF-5538-7E98-ADC8-3AEF5796DBB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2868C095-CA77-31F7-7233-6A4A64B5E1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2868C095-CA77-31F7-7233-6A4A64B5E1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2868C095-CA77-31F7-7233-6A4A64B5E1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2868C095-CA77-31F7-7233-6A4A64B5E1BE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{121162FE-5BD6-02F5-85D7-1613547B68E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{121162FE-5BD6-02F5-85D7-1613547B68E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{121162FE-5BD6-02F5-85D7-1613547B68E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{121162FE-5BD6-02F5-85D7-1613547B68E7}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 4e6c4bbf8fa217b5d0973152269ea90a4aefb883
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
