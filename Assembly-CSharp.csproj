@@ -111,6 +111,7 @@
      <Compile Include="Assets\script\Stat\Skill_img_control.cs" />
      <Compile Include="Assets\script\Stat\character.cs" />
      <Compile Include="Assets\script\Stat\character_button.cs" />
+     <Compile Include="Assets\script\Stat\skill_button_control.cs" />
      <Compile Include="Assets\script\Stat\txt\name.cs" />
      <Compile Include="Assets\script\Stat\txt\stat_txt.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
