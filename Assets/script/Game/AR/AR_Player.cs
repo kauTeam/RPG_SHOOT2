@@ -15,14 +15,9 @@ public class AR_Player : MonoBehaviour {
 	}
     void OnTriggerEnter(Collider tan)
     {
-
         if (tan.tag == "AR_Enemy_Bullet")
         {
             Destroy(tan.gameObject);
-            //if (Now_HP <= 0)
-            //{
-            //    Destroy(this.gameObject);
-            //}
         }
     }
 }

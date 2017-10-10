@@ -6,7 +6,7 @@ using UnityEngine;
 public class AR_Cube_Bullet : MonoBehaviour {
 
     public float speed = 13f;
-    public GameObject AR_Bullet;
+    public GameObject AR_User;
     public int type = 1;
     public int damage = 30;
     public float target_x;
@@ -14,53 +14,62 @@ public class AR_Cube_Bullet : MonoBehaviour {
     public float pos_x;
     public float pos_z;
     public float direction;
+    public float Stop_var = 1;
     public bool down = true;
     // Use this for initialization
     void Start()
     {
-     
+ 
     }
     // Update is called once per frame
     void Update()
     {
-        
-
-        if (this.transform.position.x == 0)
+        AR_User = GameObject.Find("user3");
+        if (!AR_User.activeSelf)
         {
-            if(this.transform.position.z >= 0)
-                this.transform.Translate(new Vector3(0, 0, -1) * speed * Time.deltaTime * Time.timeScale);
-            else if (this.transform.position.z <= 0)
-                this.transform.Translate(new Vector3(0, 0,  1) * speed * Time.deltaTime * Time.timeScale);
-        }
-        else if (this.transform.position.z == 0)
-        {
-            if (this.transform.position.x >= 0)
-                this.transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime * Time.timeScale);
-            else if (this.transform.position.x <= 0)
-                this.transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime * Time.timeScale);
+            print("연결이 끊어졌습니다.");
+            Stop_var = 0;
         }
         else
         {
-            if (this.transform.position.x >= 0 && this.transform.position.z>=0)
+            print("here");
+            Stop_var = 1;
+            if (this.transform.position.x == 0)
             {
-                this.transform.Translate(new Vector3(-1, 0, -1) * speed * Time.deltaTime * Time.timeScale);
+                if (this.transform.position.z >= 0)
+                    this.transform.Translate(new Vector3(0, 0, -1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                else if (this.transform.position.z <= 0)
+                    this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
             }
-            else if (this.transform.position.x >= 0 && this.transform.position.z <= 0)
+            else if (this.transform.position.z == 0)
             {
-                this.transform.Translate(new Vector3(-1, 0, 1) * speed * Time.deltaTime * Time.timeScale);
+                if (this.transform.position.x >= 0)
+                    this.transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                else if (this.transform.position.x <= 0)
+                    this.transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime * Time.timeScale * Stop_var);
             }
-            else if (this.transform.position.x <= 0 && this.transform.position.z >= 0)
+            else
             {
-                this.transform.Translate(new Vector3(1, 0, -1) * speed * Time.deltaTime * Time.timeScale);
-            }
-            else if (this.transform.position.x <= 0 && this.transform.position.z <= 0)
-            {
-                this.transform.Translate(new Vector3(1, 0, 1) * speed * Time.deltaTime * Time.timeScale);
+                if (this.transform.position.x >= 0 && this.transform.position.z >= 0)
+                {
+                    this.transform.Translate(new Vector3(-1, 0, -1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
+                else if (this.transform.position.x >= 0 && this.transform.position.z <= 0)
+                {
+                    this.transform.Translate(new Vector3(-1, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
+                else if (this.transform.position.x <= 0 && this.transform.position.z >= 0)
+                {
+                    this.transform.Translate(new Vector3(1, 0, -1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
+                else if (this.transform.position.x <= 0 && this.transform.position.z <= 0)
+                {
+                    this.transform.Translate(new Vector3(1, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
             }
         }
-
-
     }
+
     public void setSpeed(int x)
 
     {
