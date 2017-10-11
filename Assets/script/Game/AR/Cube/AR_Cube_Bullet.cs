@@ -6,7 +6,6 @@ using UnityEngine;
 public class AR_Cube_Bullet : MonoBehaviour {
 
     public float speed = 13f;
-    public GameObject AR_User;
     public int type = 1;
     public int damage = 30;
     public float target_x;
@@ -24,8 +23,7 @@ public class AR_Cube_Bullet : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        AR_User = GameObject.Find("user3");
-        if (!AR_User.activeSelf)
+        if (!GameObject.Find("0").activeSelf)
         {
             print("연결이 끊어졌습니다.");
             Stop_var = 0;
