@@ -7,7 +7,7 @@ public class AR_Cube_Bullet : MonoBehaviour {
 
     public float speed = 13f;
     public int type = 1;
-    public int damage = 30;
+    public int damage = 1;
     public float target_x;
     public float target_z;
     public float pos_x;
@@ -23,14 +23,15 @@ public class AR_Cube_Bullet : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (!GameObject.Find("0").activeSelf)
+        if (!GameObject.Find("0"))
         {
-            print("연결이 끊어졌습니다.");
+            //print("연결이 끊어졌습니다.");
             Stop_var = 0;
+            
         }
         else
         {
-            print("here");
+           //print("탄환 발사중");
             Stop_var = 1;
             if (this.transform.position.x == 0)
             {
