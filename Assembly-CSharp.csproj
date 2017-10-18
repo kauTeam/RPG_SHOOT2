@@ -83,6 +83,7 @@
      <Compile Include="Assets\Vuforia\Scripts\WireframeTrackableEventHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
      <Compile Include="Assets\script\Game\AR\AR_Player.cs" />
+     <Compile Include="Assets\script\Game\AR\AR_Player_HP_Bar.cs" />
      <Compile Include="Assets\script\Game\AR\Cube\AR_Cube_Bullet.cs" />
      <Compile Include="Assets\script\Game\AR\Cube\Cube_Shoot.cs" />
      <Compile Include="Assets\script\Game\AR\Cube\Cube_Type.cs" />
