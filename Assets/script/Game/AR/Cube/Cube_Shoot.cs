@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cube_Shoot : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class Cube_Shoot : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        
     }
      
     public Transform get_shoot_pos()

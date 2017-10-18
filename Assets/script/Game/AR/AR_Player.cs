@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class AR_Player : MonoBehaviour {
 
-    public int AR_Player_HP;
+    public float AR_Player_HP;
 	// Use this for initialization
 	void Start () {
-        AR_Player_HP = 5;
+        AR_Player_HP = 5f;
 	}
 	
 	// Update is called once per frame
@@ -28,7 +28,7 @@ public class AR_Player : MonoBehaviour {
         }
     }
 
-    public int GET_AR_Player_HP()
+    public float GET_AR_Player_HP()
     {
         return AR_Player_HP;
     }
