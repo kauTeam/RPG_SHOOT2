@@ -28,6 +28,7 @@ public class shop_control : MonoBehaviour {
 
     public void stat_active()
     {
+        print("stat");
         stat.SetActive(true);
         character.SetActive(false);
 
@@ -35,6 +36,7 @@ public class shop_control : MonoBehaviour {
 
     public void character_active()
     {
+        print("character");
         stat.SetActive(false);
         character.SetActive(true);
 

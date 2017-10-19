@@ -7,7 +7,7 @@ public class character_num : MonoBehaviour {
 
 	public GameObject character_object;
 	public GameObject character_describe;
-	int num=0;
+    int num=0;
 
 	// Use this for initialization
 	void Start () {
