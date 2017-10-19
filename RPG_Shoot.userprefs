@@ -1,16 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Stat\Skill_img_control.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Game\Player\Set_Player.cs">
     <Files>
       <File FileName="Assets\script\Stat\txt\stat_txt.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Game\AR\Cube\Cube_Type.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Main\Reset.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Main\stat_button_control.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Main\character_main.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Stat\character_button.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Game\Player\Set_Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Stat\skill_button_control.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Stat\Skill_img_control.cs" Line="14" Column="29" />
+      <File FileName="Assets\script\Game\Player\Set_Player.cs" Line="21" Column="6" />
+      <File FileName="Assets\script\Game\Player\Player_control.cs" Line="18" Column="3" />
+      <File FileName="Assets\script\Game\Player\Player_Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Game\Player\Player_move.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Game\Player\Player_shoot.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Game\Player\Player_Status.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
