@@ -96,7 +96,7 @@ public class Reset : MonoBehaviour {
 		
 		PlayerPrefs.SetInt ("now_character", 0);
 	
-		PlayerPrefs.SetInt ("money", 0);
+		PlayerPrefs.SetInt ("money", 20000);
 		
 	}
 

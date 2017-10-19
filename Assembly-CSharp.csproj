@@ -114,6 +114,10 @@
      <Compile Include="Assets\script\Shop\character\character_button_control.cs" />
      <Compile Include="Assets\script\Shop\character\character_descrip.cs" />
      <Compile Include="Assets\script\Shop\character\character_num.cs" />
+     <Compile Include="Assets\script\Shop\shop_control.cs" />
+     <Compile Include="Assets\script\Shop\shop_money.cs" />
+     <Compile Include="Assets\script\Shop\stat\shap_txt_control.cs" />
+     <Compile Include="Assets\script\Shop\stat\shop_stat_button_control.cs" />
      <Compile Include="Assets\script\Stat\Skill_img_control.cs" />
      <Compile Include="Assets\script\Stat\character.cs" />
      <Compile Include="Assets\script\Stat\character_button.cs" />
