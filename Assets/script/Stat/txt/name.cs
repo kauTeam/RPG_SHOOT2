@@ -24,19 +24,19 @@ public class name : MonoBehaviour {
 			name_txt.text="모험가";
 			break;
 		case 1:
-			name_txt.text="냥아치";
+			name_txt.text="토쟁이";
 			break;
 		case 2:
-			name_txt.text="토쟁이";
+			name_txt.text="양아치";
 			break;
 		case 3:
 			name_txt.text="펩시";
 			break;
 		case 4:
-			name_txt.text="땡컨";
+			name_txt.text="오공 손";
 			break;
 		case 5:
-			name_txt.text="유히왕";
+			name_txt.text="바둑이";
 			break;
 
 		}

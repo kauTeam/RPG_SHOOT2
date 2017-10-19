@@ -90,7 +90,7 @@ public class Reset : MonoBehaviour {
 
 		PlayerPrefs.SetString ("treasure","");
 		PlayerPrefs.SetInt ("stage", 101);
-		PlayerPrefs.SetString ("character_have", "0");
+		PlayerPrefs.SetString ("character_have", "0,1,2");
 		PlayerPrefs.SetInt ("level", 1);
 		PlayerPrefs.SetInt ("exp", 0);
 		
