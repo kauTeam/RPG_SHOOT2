@@ -26,9 +26,6 @@ public class character_button : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		data_arr=PlayerPrefs.GetString("character_have").Split(',');
-		for (int i = 0; i < data_arr.Length; i++) {
-			characters [i] = System.Convert.ToInt32 (data_arr[i]);
-		}
 		characters=new int[data_arr.Length];
 		for (int i = 0; i < data_arr.Length; i++) {
 			characters [i] = System.Convert.ToInt32 (data_arr[i]);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cube_Type: MonoBehaviour
 {
@@ -14,31 +15,30 @@ public class Cube_Type: MonoBehaviour
     public int damage = 20;
     public int speed = 1;
     public GameObject[] cube_type = new GameObject[8];
-    public int count = 0;
+    public Text Bullet_Count_Text=null;
+    public int Bullet_Count;
+    public int Now_count = 0;
     
     void Start()
     {
         Invoke("Shoot", 1);
-        print(count+"Start");
-        count++;
     }
 
     // Update is called once per frame
     void Update()
     {
+        setText();
         
-
     }
     public void Shoot()
     {
-        print(count + "Shoot");
-        count++;
+        
         if (!GameObject.Find("0"))
         {
             //print("연결이 끊겼습니다. 총알을 쏘지 않습니다");
             Invoke("Shoot", 3);
         }
-        else
+        else if(GameObject.Find("0")&& Bullet_Count != 20)
         {
             //print("총알을 발사합니다.");
             int Cube_Num = Random.Range(0, 9);
@@ -95,5 +95,12 @@ public class Cube_Type: MonoBehaviour
         tan.GetComponent<AR_Cube_Bullet>().setSpeed(speed);
     }
 
-    
+    public void setText()
+    {
+
+        Bullet_Count = this.GetComponent<AR_Cube_Bullet>().getBullet_count();
+        Bullet_Count_Text.text = Bullet_Count.ToString() + " / 20";
+    }
+
+
 }

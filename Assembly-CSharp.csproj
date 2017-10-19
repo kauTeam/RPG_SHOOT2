@@ -82,6 +82,7 @@
      <Compile Include="Assets\Vuforia\Scripts\WireframeBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\WireframeTrackableEventHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
+     <Compile Include="Assets\script\Game\AR\AR_GameControll.cs" />
      <Compile Include="Assets\script\Game\AR\AR_Player.cs" />
      <Compile Include="Assets\script\Game\AR\AR_Player_HP_Bar.cs" />
      <Compile Include="Assets\script\Game\AR\Cube\AR_Cube_Bullet.cs" />
@@ -109,6 +110,10 @@
      <Compile Include="Assets\script\Main\stat_button_control.cs" />
      <Compile Include="Assets\script\Main\txt\level.cs" />
      <Compile Include="Assets\script\Main\txt\money.cs" />
+     <Compile Include="Assets\script\Shop\character\Character_shop.cs" />
+     <Compile Include="Assets\script\Shop\character\character_button_control.cs" />
+     <Compile Include="Assets\script\Shop\character\character_descrip.cs" />
+     <Compile Include="Assets\script\Shop\character\character_num.cs" />
      <Compile Include="Assets\script\Stat\Skill_img_control.cs" />
      <Compile Include="Assets\script\Stat\character.cs" />
      <Compile Include="Assets\script\Stat\character_button.cs" />

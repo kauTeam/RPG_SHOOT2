@@ -15,10 +15,12 @@ public class AR_Cube_Bullet : MonoBehaviour {
     public float direction;
     public float Stop_var = 1;
     public bool down = true;
+    public int bullet_count;
+
     // Use this for initialization
     void Start()
     {
- 
+        bullet_count = 0;
     }
     // Update is called once per frame
     void Update()
@@ -29,10 +31,11 @@ public class AR_Cube_Bullet : MonoBehaviour {
             Stop_var = 0;
             
         }
-        else
+        else if(GameObject.Find("0")&& bullet_count!=5)
         {
            //print("탄환 발사중");
             Stop_var = 1;
+            bullet_count++;
             if (this.transform.position.x == 0)
             {
                 if (this.transform.position.z >= 0)
@@ -92,5 +95,10 @@ public class AR_Cube_Bullet : MonoBehaviour {
         Destroy(this.gameObject);
     }
 
+    public int getBullet_count()
+    {
+        print(bullet_count);
+        return bullet_count;
+    }
 }
 
