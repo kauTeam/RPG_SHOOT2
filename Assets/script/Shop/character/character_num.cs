@@ -19,4 +19,17 @@ public class character_num : MonoBehaviour {
 		character_object.GetComponent<Character_shop> ().setCharacter (num);
         character_describe.GetComponent<character_descrip>().set_characterNum(num);
 	}
+    public void left()
+    {
+        num -= 1;
+        if(num<0)
+        {
+            num = 5;
+        }
+    }
+
+    public void right()
+    {
+        num = (num + 1) % 6;
+    }
 }
