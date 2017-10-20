@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class shop_control : MonoBehaviour {
 
 
@@ -40,6 +42,11 @@ public class shop_control : MonoBehaviour {
         stat.SetActive(false);
         character.SetActive(true);
 
+    }
+
+    public void go_home()
+    {
+        Application.LoadLevel("Main");
     }
 
 }

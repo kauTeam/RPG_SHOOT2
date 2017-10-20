@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\SceneTrans.cs" />
      <Compile Include="Assets\Vuforia\Scripts\BackgroundPlaneBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CloudRecoBehaviour.cs" />
      <Compile Include="Assets\Vuforia\Scripts\CylinderTargetBehaviour.cs" />
@@ -104,10 +103,11 @@
      <Compile Include="Assets\script\Game\UI\Potion.cs" />
      <Compile Include="Assets\script\Game\UI\User_HP_Bar.cs" />
      <Compile Include="Assets\script\Game\UI\joystick.cs" />
+     <Compile Include="Assets\script\Game\UI\scene_trans.cs" />
      <Compile Include="Assets\script\Game\UI\stop.cs" />
      <Compile Include="Assets\script\Main\Reset.cs" />
+     <Compile Include="Assets\script\Main\SceneTrans.cs" />
      <Compile Include="Assets\script\Main\character_main.cs" />
-     <Compile Include="Assets\script\Main\stat_button_control.cs" />
      <Compile Include="Assets\script\Main\txt\level.cs" />
      <Compile Include="Assets\script\Main\txt\money.cs" />
      <Compile Include="Assets\script\Shop\character\Character_shop.cs" />
@@ -122,6 +122,7 @@
      <Compile Include="Assets\script\Stat\character.cs" />
      <Compile Include="Assets\script\Stat\character_button.cs" />
      <Compile Include="Assets\script\Stat\skill_button_control.cs" />
+     <Compile Include="Assets\script\Stat\stat_button_control.cs" />
      <Compile Include="Assets\script\Stat\txt\name.cs" />
      <Compile Include="Assets\script\Stat\txt\stat_txt.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
