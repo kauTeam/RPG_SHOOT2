@@ -9,6 +9,7 @@ public class Set_Player : MonoBehaviour {
 	void Start () {
 		int now_character = PlayerPrefs.GetInt ("now_character");
         this.gameObject.transform.Find(now_character.ToString()).gameObject.SetActive(true);
+        Time.timeScale = 1;
 
 
 
@@ -17,6 +18,8 @@ public class Set_Player : MonoBehaviour {
     {
         int now_character = PlayerPrefs.GetInt("now_character");
         this.gameObject.transform.Find(now_character.ToString()).gameObject.SetActive(true);
+        Time.timeScale = 1;
+
 
     }
 

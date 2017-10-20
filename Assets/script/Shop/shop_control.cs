@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 using UnityEngine;
 
 
@@ -46,7 +48,7 @@ public class shop_control : MonoBehaviour {
 
     public void go_home()
     {
-        Application.LoadLevel("Main");
+        SceneManager.LoadScene("scene/Main");
     }
 
 }
