@@ -17,10 +17,10 @@ public class Cube_Type: MonoBehaviour
     public GameObject[] cube_type = new GameObject[8];
     public Text Bullet_Count_Text=null;
     public int Bullet_Count;
-    public int Now_count = 0;
     
     void Start()
     {
+        Bullet_Count = 0;
         Invoke("Shoot", 1);
     }
 
@@ -38,10 +38,12 @@ public class Cube_Type: MonoBehaviour
             //print("연결이 끊겼습니다. 총알을 쏘지 않습니다");
             Invoke("Shoot", 3);
         }
-        else if(GameObject.Find("0")&& Bullet_Count != 20)
+        else if(GameObject.Find("0") && Bullet_Count != 20)
         {
             //print("총알을 발사합니다.");
             int Cube_Num = Random.Range(0, 9);
+            Bullet_Count++;
+            setText();
             switch (Cube_Num)
             {
                 case 1:
@@ -97,9 +99,12 @@ public class Cube_Type: MonoBehaviour
 
     public void setText()
     {
-
-        Bullet_Count = this.GetComponent<AR_Cube_Bullet>().getBullet_count();
         Bullet_Count_Text.text = Bullet_Count.ToString() + " / 20";
+    }
+
+    public int get_Bullet_Count()
+    {
+        return Bullet_Count;
     }
 
 

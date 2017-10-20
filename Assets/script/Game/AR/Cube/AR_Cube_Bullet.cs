@@ -4,7 +4,6 @@ using UnityEngine;
 
 
 public class AR_Cube_Bullet : MonoBehaviour {
-
     public float speed = 13f;
     public int type = 1;
     public int damage = 1;
@@ -16,26 +15,34 @@ public class AR_Cube_Bullet : MonoBehaviour {
     public float Stop_var = 1;
     public bool down = true;
     public int bullet_count;
+    public int bullet_speed;
+    public bool AR_Player_Death;
+    
+    public GameObject Player = null;
 
     // Use this for initialization
     void Start()
     {
         bullet_count = 0;
+        AR_Player_Death = false;
     }
     // Update is called once per frame
     void Update()
     {
+        AR_Player_Death = Player.gameObject.GetComponent<AR_Player>().GET_AR_Player_Death();
+        if (!GameObject.Find("0") )
+        {
+            Destroy(this);
+        }
         if (!GameObject.Find("0"))
         {
             //print("연결이 끊어졌습니다.");
             Stop_var = 0;
-            
         }
-        else if(GameObject.Find("0")&& bullet_count!=5)
+        else if(GameObject.Find("0"))
         {
            //print("탄환 발사중");
             Stop_var = 1;
-            bullet_count++;
             if (this.transform.position.x == 0)
             {
                 if (this.transform.position.z >= 0)
@@ -93,12 +100,6 @@ public class AR_Cube_Bullet : MonoBehaviour {
     {
         // this object was clicked - do something
         Destroy(this.gameObject);
-    }
-
-    public int getBullet_count()
-    {
-        print(bullet_count);
-        return bullet_count;
     }
 }
 
