@@ -146,6 +146,7 @@
     <Compile Include="Assets\script\Game\Player\Player_shoot.cs" />
     <Compile Include="Assets\script\Game\Player\SKill_cool_down.cs" />
     <Compile Include="Assets\script\Game\Player\Set_Player.cs" />
+    <Compile Include="Assets\script\Game\Player\character\1\use_skill.cs" />
     <Compile Include="Assets\script\Game\UI\Game_control.cs" />
     <Compile Include="Assets\script\Game\UI\Potion.cs" />
     <Compile Include="Assets\script\Game\UI\User_HP_Bar.cs" />
