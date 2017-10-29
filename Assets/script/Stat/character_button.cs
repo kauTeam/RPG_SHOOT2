@@ -44,7 +44,7 @@ public class character_button : MonoBehaviour {
 	{
 		now=now-1;
 		if (now < 0) {
-			now=characters[characters.Length-1];
+			now=characters.Length-1;
 		}
 		PlayerPrefs.SetInt ("now_character", characters [now]);
 	}
