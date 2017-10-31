@@ -31,7 +31,6 @@ public class AR_Player_HP_Bar : MonoBehaviour
     
     public void SetHealthBar(float myHealth)
     {
-        print("myhealth" + myHealth);
         AR_User_HPBar.transform.localScale = new Vector3(Mathf.Clamp(myHealth/4, 0f, 1f), AR_User_HPBar.transform.localScale.y, AR_User_HPBar.transform.localScale.z);
     }
 }

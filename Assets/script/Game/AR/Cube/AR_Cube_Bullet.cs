@@ -30,7 +30,7 @@ public class AR_Cube_Bullet : MonoBehaviour {
     void Update()
     {
         AR_Player_Death = Player.gameObject.GetComponent<AR_Player>().GET_AR_Player_Death();
-        if (!GameObject.Find("0") )
+        if (!GameObject.Find("0") && AR_Player_Death == true)
         {
             Destroy(this);
         }

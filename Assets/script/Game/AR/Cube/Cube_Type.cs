@@ -17,7 +17,9 @@ public class Cube_Type: MonoBehaviour
     public GameObject[] cube_type = new GameObject[8];
     public Text Bullet_Count_Text=null;
     public int Bullet_Count;
-    
+    public GameObject[] tanlist = new GameObject[20];
+
+
     void Start()
     {
         Bullet_Count = 0;
@@ -93,6 +95,7 @@ public class Cube_Type: MonoBehaviour
         }
         yield return new WaitForSeconds(delay);
         GameObject tan = Instantiate(Bullet, shoot_pos.position, shoot_pos.rotation);
+        tan.name = "AR_Bullet" + Bullet_Count.ToString();
         tan.GetComponent<AR_Cube_Bullet>().setDamage(damage);
         tan.GetComponent<AR_Cube_Bullet>().setSpeed(speed);
     }
@@ -105,6 +108,10 @@ public class Cube_Type: MonoBehaviour
     public int get_Bullet_Count()
     {
         return Bullet_Count;
+    }
+    public GameObject[] get_Bullet()
+    {
+        return tanlist;
     }
 
 
