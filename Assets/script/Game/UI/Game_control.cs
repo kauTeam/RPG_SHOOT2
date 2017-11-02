@@ -36,6 +36,9 @@ public class Game_control : MonoBehaviour {
 			if (i == monster.Length - 1) {
 				Time.timeScale = 0;
 
+                int now_gold = PlayerPrefs.GetInt("money");
+                now_gold += gold;
+                PlayerPrefs.SetInt("money",now_gold);
 				win.SetActive (true);
 				gold_text.text=gold.ToString()+" GOLD";
 				exp_text.text=exp.ToString()+" EXP";
@@ -43,16 +46,21 @@ public class Game_control : MonoBehaviour {
 				save = PlayerPrefs.GetInt ("exp");
 				int lv=PlayerPrefs.GetInt ("level");
 				save += exp;
-				if (save > lv * 10) {
-					save -= (lv * 10);
+				if (save > lv *lv* 40) {
+					save -= (lv * lv * 40);
 					PlayerPrefs.SetInt ("level", lv + 1);
 					PlayerPrefs.SetInt ("exp", save);
 				}
-				PlayerPrefs.SetInt ("stage", stage);
+                else
+                {
+                    PlayerPrefs.SetInt("exp", save);
+                }
+                int temp_stage = PlayerPrefs.GetInt("stage");
+                if (temp_stage < stage)
+                {
+                    PlayerPrefs.SetInt("stage", stage);
+                }
 			}
-			
 		}
-
-		
 	}
 }

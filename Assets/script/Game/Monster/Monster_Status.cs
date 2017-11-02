@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Monster_Status : MonoBehaviour {
 
-
+    public GameObject ticket;
+    public Transform pos;
 	public int Max_HP;
 	int Now_HP;
 	// Use this for initialization
@@ -28,7 +29,11 @@ public class Monster_Status : MonoBehaviour {
 			Destroy (tan.gameObject);
 			print (Now_HP);
 			if (Now_HP <= 0) {
-				Destroy (this.gameObject);
+                if (1 == Random.Range(1, 20))
+                {
+                    Instantiate(ticket,pos.position, pos.rotation);
+                }
+                Destroy (this.gameObject);
 			}
 		}
 	}

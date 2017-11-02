@@ -7,11 +7,8 @@ public class stop : MonoBehaviour {
 
 	public GameObject go;
 
-	public Text count;
 	// Use this for initialization
 	void Start () {
-		count = count.GetComponent<Text> ();
-		count.text="Start!";
 	}
 	
 	// Update is called once per frame

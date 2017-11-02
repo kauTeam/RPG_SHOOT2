@@ -17,7 +17,13 @@ public class SceneTrans : MonoBehaviour {
 
     public void Trans_AR()
     {
-        SceneManager.LoadScene("scene/AR");
+        int count = PlayerPrefs.GetInt("ticket");
+        if (count > 0)
+        {
+            count--;
+            PlayerPrefs.SetInt("ticket",count);
+            SceneManager.LoadScene("scene/AR");
+        }
     }
 
     public void Trans_Shop()

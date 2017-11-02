@@ -56,6 +56,12 @@ public class Player_Status : MonoBehaviour {
 				Destroy (this.gameObject);
 			}
 		}
+        if(tan.tag=="ticket")
+        {
+            int count = PlayerPrefs.GetInt("ticket");
+            PlayerPrefs.SetInt("ticket", count + 1);
+            Destroy(tan.gameObject);
+        }
 	}
 
 	public int get_Now_HP()
