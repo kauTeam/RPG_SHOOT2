@@ -80,7 +80,10 @@ public class Player_Status : MonoBehaviour {
 	{
 		return Max_MP;
 	}
-
+    public void use_mp(int x)
+    {
+        Now_Mp -= x;
+    }
 
 	public void use()
 	{

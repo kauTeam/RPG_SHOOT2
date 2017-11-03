@@ -23,22 +23,24 @@ public class Monster_Status : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider tan)
 	{
-
 		if (tan.tag == "player_bullet") {
 			Now_HP -= tan.gameObject.GetComponent<Player_Bullet> ().getDamage ();
 			Destroy (tan.gameObject);
-			print (Now_HP);
-			if (Now_HP <= 0) {
-                if (1 == Random.Range(1, 20))
-                {
-                    Instantiate(ticket,pos.position, pos.rotation);
-                }
-                Destroy (this.gameObject);
-			}
 		}
 	}
+    void get_damage(int damage)
+    {
+        Now_HP -= damage;
+    }
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Now_HP <= 0)
+        {
+            if (1 == Random.Range(1, 20))
+            {
+                Instantiate(ticket, pos.position, pos.rotation);
+            }
+            Destroy(this.gameObject);
+        }
+    }
 }
