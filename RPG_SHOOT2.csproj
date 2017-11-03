@@ -154,6 +154,7 @@
     <Compile Include="Assets\script\Game\UI\User_MP_Bar.cs" />
     <Compile Include="Assets\script\Game\UI\joystick.cs" />
     <Compile Include="Assets\script\Game\UI\scene_trans.cs" />
+    <Compile Include="Assets\script\Game\UI\set_skill_img.cs" />
     <Compile Include="Assets\script\Game\UI\stop.cs" />
     <Compile Include="Assets\script\Main\Reset.cs" />
     <Compile Include="Assets\script\Main\SceneTrans.cs" />

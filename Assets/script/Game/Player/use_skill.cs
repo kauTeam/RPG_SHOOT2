@@ -28,42 +28,42 @@ public class use_skill : MonoBehaviour {
         switch(character)
         {
             case 0:
-                if(this.transform.Find("0").gameObject.GetComponent<Player_Status>().get_Now_MP()>mp1[character])
+                if(this.transform.Find("0").gameObject.GetComponent<Player_Status>().get_Now_MP()>= mp1[character])
                 {
                     //스킬구현
                     this.transform.Find("0").gameObject.GetComponent<Player_Status>().use_mp(mp1[character]);
                 }
                 break;
             case 1:
-                if (this.transform.Find("1").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp1[character])
+                if (this.transform.Find("1").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp1[character])
                 {
                     //스킬구현
                     this.transform.Find("1").gameObject.GetComponent<Player_Status>().use_mp(mp1[character]);
                 }
                 break;
             case 2:
-                if (this.transform.Find("2").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp1[character])
+                if (this.transform.Find("2").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp1[character])
                 {
                     //스킬구현
                     this.transform.Find("2").gameObject.GetComponent<Player_Status>().use_mp(mp1[character]);
                 }
                 break;
             case 3:
-                if (this.transform.Find("3").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp1[character])
+                if (this.transform.Find("3").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp1[character])
                 {
                     //스킬구현
                     this.transform.Find("3").gameObject.GetComponent<Player_Status>().use_mp(mp1[character]);
                 }
                 break;
             case 4:
-                if (this.transform.Find("4").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp1[character])
+                if (this.transform.Find("4").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp1[character])
                 {
                     //스킬구현
                     this.transform.Find("4").gameObject.GetComponent<Player_Status>().use_mp(mp1[character]);
                 }
                 break;
             case 5:
-                if (this.transform.Find("5").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp1[character])
+                if (this.transform.Find("5").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp1[character])
                 {
                     //스킬구현
                     this.transform.Find("5").gameObject.GetComponent<Player_Status>().use_mp(mp1[character]);
@@ -74,45 +74,47 @@ public class use_skill : MonoBehaviour {
 
     public void use_skill2()
     {
+        print(this.transform.Find("0").gameObject.GetComponent<Player_Status>().get_Now_MP());
+
         switch (character)
         {
             case 0:
-                if (this.transform.Find("0").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp2[character])
+                if (this.transform.Find("0").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp2[character])
                 {
                     //스킬구현
                     this.transform.Find("0").gameObject.GetComponent<Player_Status>().use_mp(mp2[character]);
                 }
                 break;
             case 1:
-                if (this.transform.Find("1").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp2[character])
+                if (this.transform.Find("1").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp2[character])
                 {
                     //스킬구현
                     this.transform.Find("1").gameObject.GetComponent<Player_Status>().use_mp(mp2[character]);
                 }
                 break;
             case 2:
-                if (this.transform.Find("2").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp2[character])
+                if (this.transform.Find("2").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp2[character])
                 {
                     //스킬구현
                     this.transform.Find("2").gameObject.GetComponent<Player_Status>().use_mp(mp2[character]);
                 }
                 break;
             case 3:
-                if (this.transform.Find("3").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp2[character])
+                if (this.transform.Find("3").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp2[character])
                 {
                     //스킬구현
                     this.transform.Find("3").gameObject.GetComponent<Player_Status>().use_mp(mp2[character]);
                 }
                 break;
             case 4:
-                if (this.transform.Find("4").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp2[character])
+                if (this.transform.Find("4").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp2[character])
                 {
                     //스킬구현
                     this.transform.Find("4").gameObject.GetComponent<Player_Status>().use_mp(mp2[character]);
                 }
                 break;
             case 5:
-                if (this.transform.Find("5").gameObject.GetComponent<Player_Status>().get_Now_MP() > mp2[character])
+                if (this.transform.Find("5").gameObject.GetComponent<Player_Status>().get_Now_MP() >= mp2[character])
                 {
                     //스킬구현
                     this.transform.Find("5").gameObject.GetComponent<Player_Status>().use_mp(mp2[character]);

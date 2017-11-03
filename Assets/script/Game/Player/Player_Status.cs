@@ -51,7 +51,6 @@ public class Player_Status : MonoBehaviour {
 			
 			Now_HP -= tan.gameObject.GetComponent<Bullet> ().getDamage ();
 			Destroy (tan.gameObject);
-			print (Now_HP);
 			if (Now_HP <= 0) {
 				Destroy (this.gameObject);
 			}
