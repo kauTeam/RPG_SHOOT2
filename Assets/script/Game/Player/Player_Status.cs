@@ -11,9 +11,8 @@ public class Player_Status : MonoBehaviour {
 	int Now_HP;
 	int Now_Mp;
 	public int Mp_Recover;
-	public int count;
-	public int Heal_HP;
-	public int Heal_MP;
+	int count=2;
+
 	bool Mp_Cover_state=true;
 	// Use this for initialization
 	void Start () {
@@ -88,15 +87,28 @@ public class Player_Status : MonoBehaviour {
 	{
 		if (count>0) {
 			count--;
-			Now_HP += Heal_HP;
+			Now_HP += (Max_HP/10);
 			if (Now_HP > Max_HP) {
 				Now_HP = Max_HP;
 			}
 
-			Now_Mp+= Heal_MP;
+			Now_Mp+= (Max_MP/10);
 			if ( Now_Mp > Max_MP) {
 				Now_Mp = Max_MP;
 			}
 		}
 	}
+
+    public void heal()
+    {
+        Now_HP += (Max_HP / 10);
+        if(Now_HP>Max_HP)
+        {
+            Now_HP = Max_HP;
+        }
+    }
+    public int return_count()
+    {
+        return count;
+    }
 }

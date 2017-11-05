@@ -6,6 +6,7 @@ public class use_skill : MonoBehaviour {
 
 
     public GameObject wind_attack;
+    public GameObject carrot_attack;
     int character;
     int damage;
     // Use this for initialization
@@ -30,10 +31,13 @@ public class use_skill : MonoBehaviour {
         {
             case 0:
                 GameObject wind1 = Instantiate(wind_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
-                wind1.GetComponent<wind_attack>().setDamage(damage*3);  
+                wind1.GetComponent<wind_attack>().setDamage(damage);
+                Invoke("character0_attack",0.2f);
+                Invoke("character0_attack", 0.4f);
                 //스킬구현
                 break;
             case 1:
+                Instantiate(carrot_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);   
                     //스킬구현
                 break;
             case 2:
@@ -60,6 +64,7 @@ public class use_skill : MonoBehaviour {
                 this.gameObject.transform.Find("0").gameObject.transform.Find("shield").gameObject.SetActive(true);
                 break;
             case 1:
+                this.gameObject.transform.Find("1").gameObject.GetComponent<Player_Status>().heal();
                 break;
             case 2:
                 break;
@@ -71,4 +76,13 @@ public class use_skill : MonoBehaviour {
                 break;
         }
     }
+
+    void character0_attack()
+    {
+        GameObject wind1 = Instantiate(wind_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
+        wind1.GetComponent<wind_attack>().setDamage(damage);
+    }
+
+
 }
+

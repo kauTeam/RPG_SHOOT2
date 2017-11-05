@@ -13,7 +13,7 @@ public class Potion : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		count_text = count_text.GetComponent<Text> ();
-		count = user.GetComponent<Player_Status> ().count;
+		count = user.GetComponent<Player_Status> ().return_count();
 	}
 	
 	// Update is called once per frame

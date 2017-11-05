@@ -64,6 +64,9 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -147,8 +150,9 @@
     <Compile Include="Assets\script\Game\Player\Player_shoot.cs" />
     <Compile Include="Assets\script\Game\Player\SKill_cool_down.cs" />
     <Compile Include="Assets\script\Game\Player\Set_Player.cs" />
-    <Compile Include="Assets\script\Game\Player\character\1\shield0.cs" />
-    <Compile Include="Assets\script\Game\Player\character\1\wind_attack.cs" />
+    <Compile Include="Assets\script\Game\Player\character\0\shield0.cs" />
+    <Compile Include="Assets\script\Game\Player\character\0\wind_attack.cs" />
+    <Compile Include="Assets\script\Game\Player\character\1\skill_carrot.cs" />
     <Compile Include="Assets\script\Game\Player\use_skill.cs" />
     <Compile Include="Assets\script\Game\UI\Game_control.cs" />
     <Compile Include="Assets\script\Game\UI\Potion.cs" />
