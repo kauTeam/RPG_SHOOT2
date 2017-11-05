@@ -28,7 +28,7 @@ public class Monster_Status : MonoBehaviour {
 			Destroy (tan.gameObject);
 		}
 	}
-    void get_damage(int damage)
+    public void get_damage(int damage)
     {
         Now_HP -= damage;
     }

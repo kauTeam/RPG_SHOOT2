@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 60
+  controlID: 43
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 22
+  controlID: 44
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -365,14 +365,14 @@ MonoBehaviour:
     width: 742
     height: 200
   m_SceneLighting: 1
-  lastFramingTime: 1275.7182917899256
+  lastFramingTime: 17438.692433307842
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 650.098, y: 214.8, z: 0}
+    m_Target: {x: 0.00014781952, y: 1.2612169, z: -6.6461477}
     speed: 2
-    m_Value: {x: 650.098, y: 214.8, z: 0}
+    m_Value: {x: 0.00014781952, y: 1.2612169, z: -6.6461477}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -395,13 +395,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.13483681, y: 0.030314194, z: -0.004114619, w: -0.9904151}
+    m_Target: {x: 0.4399145, y: 0.4807276, z: -0.30421728, w: 0.6949232}
     speed: 2
-    m_Value: {x: -0.13483681, y: 0.030314194, z: -0.004114619, w: -0.9904151}
+    m_Value: {x: 0.43989468, y: 0.48070595, z: -0.30420357, w: 0.6948919}
   m_Size:
-    m_Target: 148.40762
+    m_Target: 10.371991
     speed: 2
-    m_Value: 148.40762
+    m_Value: 10.371991
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -440,9 +440,9 @@ MonoBehaviour:
     height: 710
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 202f0000
-    m_LastClickedID: 12064
-    m_ExpandedIDs: 1030ffff423affff4844ffffccfbffff00000000662f0000b62f0000d02f0000
+    m_SelectedIDs: 5416ffff
+    m_LastClickedID: 0
+    m_ExpandedIDs: 98cefeffb83bffffd8e9ffff12faffffccfbffff00000000202f0000fa2f00000c300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -502,19 +502,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/script/Game/Player
+    - Assets/script/Game/Player/character/1
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/script/Game/Player
+  - Assets/script/Game/Player/character/1
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jongs\Documents\RPG_SHOOT2
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c42c0000
-    m_LastClickedID: 11460
-    m_ExpandedIDs: 0000000088260000722700000e280000462800005e280000322900003e2900002a2a0000d22a0000ea2a0000402b0000462b0000942b0000f02b0000182c0000362c0000682c0000942c0000b42c0000c42c0000cc2c0000d82c0000ffffff7f
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 32290000
+    m_LastClickedID: 10546
+    m_ExpandedIDs: 0000000088260000722700000e280000462800005e2800002c290000322900003e2900002a2a0000d22a0000ea2a0000402b0000462b0000942b0000f02b0000182c0000362c0000682c0000742c0000942c0000b42c0000c42c0000cc2c0000d82c0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -570,7 +570,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: 903100001e2a0000
+    m_ExpandedInstanceIDs: 903100001e2a0000382a000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -623,7 +623,7 @@ MonoBehaviour:
     y: 92
     width: 352
     height: 710
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 16.955078}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 100
