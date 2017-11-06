@@ -8,7 +8,8 @@ public class use_skill : MonoBehaviour {
     public GameObject wind_attack;
     public GameObject carrot_attack;
     public GameObject sheep_attack;
-    int jump_speed;
+    public GameObject dog_attack;
+    float jump = 1f;
     int character;
     int damage;
     // Use this for initialization
@@ -51,13 +52,17 @@ public class use_skill : MonoBehaviour {
                 //스킬구현
                 break;
             case 3:
-                //this.gameObject.transform.Find("3").gameObject.transform.Translate(0, 0, 0);
+                for(float i = 1f; i>= -1; i -= 0.1f)
+                {
+                    
+                }
                     //스킬구현
                 break;
             case 4:
                     //스킬구현
                 break;
-            case 5:
+            case 5://스킬 구현된뒤 그위치 고정시켜야함  Instantiate로 구현해야함
+                Instantiate(dog_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
                 break;
         }
     }
@@ -78,10 +83,13 @@ public class use_skill : MonoBehaviour {
                 this.gameObject.transform.Find("2").gameObject.transform.Find("wool_shield").gameObject.SetActive(true);
                 break;
             case 3:
+
                 break;
             case 4:
+                this.gameObject.transform.Find("4").gameObject.transform.Find("alter_ego").gameObject.SetActive(true);
                 break;
             case 5:
+                this.gameObject.transform.Find("pyramid").gameObject.SetActive(true);
                 break;
         }
     }
