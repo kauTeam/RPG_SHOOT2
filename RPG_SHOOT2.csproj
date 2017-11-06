@@ -61,9 +61,6 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -148,6 +145,8 @@
     <Compile Include="Assets\script\Game\Player\character\0\shield0.cs" />
     <Compile Include="Assets\script\Game\Player\character\0\wind_attack.cs" />
     <Compile Include="Assets\script\Game\Player\character\1\skill_carrot.cs" />
+    <Compile Include="Assets\script\Game\Player\character\2\Sheep_Attack.cs" />
+    <Compile Include="Assets\script\Game\Player\character\2\wool_shield.cs" />
     <Compile Include="Assets\script\Game\Player\use_skill.cs" />
     <Compile Include="Assets\script\Game\UI\Game_control.cs" />
     <Compile Include="Assets\script\Game\UI\Potion.cs" />

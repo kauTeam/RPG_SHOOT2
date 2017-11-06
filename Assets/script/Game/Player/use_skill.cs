@@ -7,6 +7,8 @@ public class use_skill : MonoBehaviour {
 
     public GameObject wind_attack;
     public GameObject carrot_attack;
+    public GameObject sheep_attack;
+    int jump_speed;
     int character;
     int damage;
     // Use this for initialization
@@ -32,7 +34,7 @@ public class use_skill : MonoBehaviour {
             case 0:
                 GameObject wind1 = Instantiate(wind_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
                 wind1.GetComponent<wind_attack>().setDamage(damage);
-                Invoke("character0_attack",0.2f);
+                Invoke("character0_attack", 0.2f);
                 Invoke("character0_attack", 0.4f);
                 //스킬구현
                 break;
@@ -41,9 +43,15 @@ public class use_skill : MonoBehaviour {
                     //스킬구현
                 break;
             case 2:
-                    //스킬구현
+                Instantiate(sheep_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
+                Instantiate(sheep_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
+                Instantiate(sheep_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos2").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
+                Instantiate(sheep_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos3").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
+                Instantiate(sheep_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos4").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
+                //스킬구현
                 break;
             case 3:
+                //this.gameObject.transform.Find("3").gameObject.transform.Translate(0, 0, 0);
                     //스킬구현
                 break;
             case 4:
@@ -67,6 +75,7 @@ public class use_skill : MonoBehaviour {
                 this.gameObject.transform.Find("1").gameObject.GetComponent<Player_Status>().heal();
                 break;
             case 2:
+                this.gameObject.transform.Find("2").gameObject.transform.Find("wool_shield").gameObject.SetActive(true);
                 break;
             case 3:
                 break;
