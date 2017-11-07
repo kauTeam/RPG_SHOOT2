@@ -17,8 +17,9 @@ public class AR_Cube_Bullet : MonoBehaviour {
     public int bullet_count;
     public int bullet_speed;
     public bool AR_Player_Death;
-    
+    public int Cube_Num;
     public GameObject Player = null;
+
 
     // Use this for initialization
     void Start()
@@ -32,7 +33,7 @@ public class AR_Cube_Bullet : MonoBehaviour {
         AR_Player_Death = Player.gameObject.GetComponent<AR_Player>().GET_AR_Player_Death();
         if (!GameObject.Find("0") && AR_Player_Death == true)
         {
-            Destroy(this);
+           Destroy(this);
         }
         if (!GameObject.Find("0"))
         {
@@ -41,39 +42,48 @@ public class AR_Cube_Bullet : MonoBehaviour {
         }
         else if(GameObject.Find("0"))
         {
-           //print("탄환 발사중");
+            //print("탄환 발사중");
             Stop_var = 1;
             if (this.transform.position.x == 0)
             {
                 if (this.transform.position.z >= 0)
-                    this.transform.Translate(new Vector3(0, 0, -1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
-                else if (this.transform.position.z <= 0)
+                {
                     this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
+                else if (this.transform.position.z <= 0)
+                {
+                    this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
             }
             else if (this.transform.position.z == 0)
             {
                 if (this.transform.position.x >= 0)
-                    this.transform.Translate(new Vector3(-1, 0, 0) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                {
+                    this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
                 else if (this.transform.position.x <= 0)
-                    this.transform.Translate(new Vector3(1, 0, 0) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                {
+                    this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                }
             }
             else
             {
                 if (this.transform.position.x >= 0 && this.transform.position.z >= 0)
                 {
-                    this.transform.Translate(new Vector3(-1, 0, -1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                    this.transform.Translate(new Vector3(0 , 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+ 
                 }
                 else if (this.transform.position.x >= 0 && this.transform.position.z <= 0)
                 {
-                    this.transform.Translate(new Vector3(-1, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                    this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
                 }
                 else if (this.transform.position.x <= 0 && this.transform.position.z >= 0)
                 {
-                    this.transform.Translate(new Vector3(1, 0, -1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                    this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
                 }
                 else if (this.transform.position.x <= 0 && this.transform.position.z <= 0)
                 {
-                    this.transform.Translate(new Vector3(1, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
+                    this.transform.Translate(new Vector3(0, 0, 1) * speed * Time.deltaTime * Time.timeScale * Stop_var);
                 }
             }
         }

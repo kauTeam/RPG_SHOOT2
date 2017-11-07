@@ -18,6 +18,9 @@ public class Cube_Type: MonoBehaviour
     public Text Bullet_Count_Text=null;
     public int Bullet_Count;
     public GameObject[] tanlist = new GameObject[20];
+    public int Cube_Num;
+
+
 
 
     void Start()
@@ -43,50 +46,59 @@ public class Cube_Type: MonoBehaviour
         else if(GameObject.Find("0") && Bullet_Count != 20)
         {
             //print("총알을 발사합니다.");
-            int Cube_Num = Random.Range(0, 9);
+            Cube_Num = Random.Range(0, 9);
             Bullet_Count++;
             setText();
+            double Angle = 0f;
             switch (Cube_Num)
             {
                 case 1:
                     shoot_pos = cube_type[0].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = 180f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
                 case 2:
                     shoot_pos = cube_type[1].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = 0f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
                 case 3:
                     shoot_pos = cube_type[2].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = 90f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
                 case 4:
                     shoot_pos = cube_type[3].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = -90f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
                 case 5:
                     shoot_pos = cube_type[4].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = -135f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
                 case 6:
                     shoot_pos = cube_type[5].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = -45f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
                 case 7:
                     shoot_pos = cube_type[6].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = 135f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
                 case 8:
                     shoot_pos = cube_type[7].GetComponent<Cube_Shoot>().get_shoot_pos();
-                    StartCoroutine(lockOn_bullet(3, 1));
+                    Angle = 45f;
+                    StartCoroutine(lockOn_bullet(3, 1, Angle));
                     break;
 
             }
             Invoke("Shoot", 3);
         }
     }
-    
-    IEnumerator lockOn_bullet(int speed, float delay)
+
+    IEnumerator lockOn_bullet(int speed, float delay, double angle)
     {
         if (target_pos != null)
         {
@@ -98,6 +110,7 @@ public class Cube_Type: MonoBehaviour
         tan.name = "AR_Bullet" + Bullet_Count.ToString();
         tan.GetComponent<AR_Cube_Bullet>().setDamage(damage);
         tan.GetComponent<AR_Cube_Bullet>().setSpeed(speed);
+        tan.transform.rotation = Quaternion.Euler(0, (float)angle, 0);
     }
 
     public void setText()
@@ -113,6 +126,5 @@ public class Cube_Type: MonoBehaviour
     {
         return tanlist;
     }
-
 
 }
