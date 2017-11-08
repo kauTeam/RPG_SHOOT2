@@ -47,9 +47,9 @@ public class Game_control : MonoBehaviour {
                     save = PlayerPrefs.GetInt("exp");
                     int lv = PlayerPrefs.GetInt("level");
                     save += exp;
-                    if (save > lv * lv * 40)
+                    if (save >= lv*40+lv * lv * 10)
                     {
-                        save -= (lv * lv * 40);
+                        save -= (lv * 40 + lv * lv * 10);
                         PlayerPrefs.SetInt("level", lv + 1);
                         PlayerPrefs.SetInt("exp", save);
                     }
@@ -62,6 +62,7 @@ public class Game_control : MonoBehaviour {
                     {
                         PlayerPrefs.SetInt("stage", stage);
                     }
+                    check = false;
                 }
 			}
 		}
