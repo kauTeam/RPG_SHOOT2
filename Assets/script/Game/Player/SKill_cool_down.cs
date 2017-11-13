@@ -67,7 +67,6 @@ public class SKill_cool_down : MonoBehaviour {
         if (sk1_now_cool[now_character] < sk1_cool[now_character])
         {
             sk1_now_cool[now_character] += Time.deltaTime;
-            print((sk1_now_cool[now_character] / sk1_cool[now_character]).ToString());
             skills[0].skillIcon.fillAmount = sk1_now_cool[now_character] / sk1_cool[now_character];
         }
         if (sk2_now_cool[now_character] < sk2_cool[now_character])

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Monkey_Shield : MonoBehaviour {
 
     int sheild_count = 0;
+    public int speed;
     void Start()
     {
 
@@ -13,7 +14,11 @@ public class Monkey_Shield : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        this.gameObject.transform.Translate(0, 0, speed * Time.timeScale * Time.deltaTime);
+        if (this.gameObject.transform.position.z > 18)
+        {
+            Destroy(this.gameObject);
+        }
     }
     private void OnTriggerEnter(Collider tan)
     {

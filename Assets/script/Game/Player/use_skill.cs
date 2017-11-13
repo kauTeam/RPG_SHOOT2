@@ -9,6 +9,7 @@ public class use_skill : MonoBehaviour {
     public GameObject carrot_attack;
     public GameObject sheep_attack;
     public GameObject dog_attack;
+    public GameObject monkey_shield;
     float jump = 1f;
     int character;
     int damage;
@@ -86,7 +87,9 @@ public class use_skill : MonoBehaviour {
 
                 break;
             case 4:
-                this.gameObject.transform.Find("4").gameObject.transform.Find("alter_ego").gameObject.SetActive(true);
+                Instantiate(monkey_shield, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego1").gameObject.transform.rotation);
+                Instantiate(monkey_shield, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego2").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego2").gameObject.transform.rotation);
+                Instantiate(monkey_shield, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego3").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego3").gameObject.transform.rotation);
                 break;
             case 5:
                 this.gameObject.transform.Find("pyramid").gameObject.SetActive(true);

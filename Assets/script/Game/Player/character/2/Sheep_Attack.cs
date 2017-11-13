@@ -35,16 +35,11 @@ public class Sheep_Attack : MonoBehaviour {
 
     void OnTriggerEnter(Collider tan)
     {
-
         if (tan.tag == "monster")
         {
             tan.gameObject.GetComponent<Monster_Status>().get_damage(damage);
             Destroy(this.gameObject);
         }
-        if(tan.tag == "enemy_bullet")
-        {
-            Destroy(this.gameObject);
-            Destroy(tan.gameObject);
-        }
+       
     }
 }
