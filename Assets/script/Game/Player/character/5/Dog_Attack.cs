@@ -10,7 +10,7 @@ public class Dog_Attack : MonoBehaviour {
     void Start()
     {
         damage = PlayerPrefs.GetInt("damage");
-        Invoke("set_Destroy", 10f);
+        Invoke("set_Destroy", 8f);
         count = 0;
     }
 
@@ -31,6 +31,18 @@ public class Dog_Attack : MonoBehaviour {
                 count = 0;
             }
         }
+    }
+    private void OnTriggerEnter(Collider Enemy)
+    {
+        if (Enemy.tag == "monster")
+        {
+            Enemy.gameObject.GetComponent<Monster_Status>().get_damage(damage);
+        }
+
+    }
+    private void OnTriggerExit(Collider Enemy)
+    {
+        count = 0;
     }
     void set_Destroy()
     {

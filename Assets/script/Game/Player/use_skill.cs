@@ -10,6 +10,7 @@ public class use_skill : MonoBehaviour {
     public GameObject sheep_attack;
     public GameObject dog_attack;
     public GameObject monkey_shield;
+    public GameObject monkey_attack;
     float jump = 1f;
     int character;
     int damage;
@@ -60,10 +61,11 @@ public class use_skill : MonoBehaviour {
                     //스킬구현
                 break;
             case 4:
-                    //스킬구현
+                //스킬구현
+                Instantiate(monkey_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.rotation);
                 break;
             case 5://스킬 구현된뒤 그위치 고정시켜야함  Instantiate로 구현해야함
-                Instantiate(dog_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
+                Instantiate(dog_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.rotation);
                 break;
         }
     }
