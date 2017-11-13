@@ -86,7 +86,7 @@ public class use_skill : MonoBehaviour {
                 this.gameObject.transform.Find("2").gameObject.transform.Find("wool_shield").gameObject.SetActive(true);
                 break;
             case 3:
-
+                DeleteAll();
                 break;
             case 4:
                 Instantiate(monkey_shield, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego1").gameObject.transform.rotation);
@@ -103,6 +103,17 @@ public class use_skill : MonoBehaviour {
     {
         GameObject wind1 = Instantiate(wind_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
         wind1.GetComponent<wind_attack>().setDamage(damage);
+    }
+
+    void DeleteAll()
+    {
+        GameObject[] clones;
+        clones = GameObject.FindGameObjectsWithTag("enemy_bullet");
+        for(int i=0; i< clones.Length; i++)
+        {
+            Destroy(clones[i].gameObject);
+        }
+
     }
 
 
