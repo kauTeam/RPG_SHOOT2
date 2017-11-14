@@ -126,8 +126,5 @@ public class use_skill : MonoBehaviour {
             jumping = false;
         else jumping = !jumping;
     }
-
-
-
 }
 
