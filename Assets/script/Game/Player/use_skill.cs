@@ -11,6 +11,9 @@ public class use_skill : MonoBehaviour {
     public GameObject dog_attack;
     public GameObject monkey_shield;
     public GameObject monkey_attack;
+
+    private bool jumping;
+
     float jump = 1f;
     int character;
     int damage;
@@ -54,10 +57,7 @@ public class use_skill : MonoBehaviour {
                 //스킬구현
                 break;
             case 3:
-                for(float i = 1f; i>= -1; i -= 0.1f)
-                {
-                    
-                }
+                jump_true();
                     //스킬구현
                 break;
             case 4:
@@ -94,7 +94,7 @@ public class use_skill : MonoBehaviour {
                 Instantiate(monkey_shield, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego3").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego3").gameObject.transform.rotation);
                 break;
             case 5:
-                this.gameObject.transform.Find("pyramid").gameObject.SetActive(true);
+                this.gameObject.transform.Find("5").gameObject.transform.Find("pyramid").gameObject.SetActive(true);
                 break;
         }
     }
@@ -115,6 +115,18 @@ public class use_skill : MonoBehaviour {
         }
 
     }
+
+    public bool Istrue_jump()
+    {
+        return jumping;
+    }
+    public void jump_true()
+    {
+        if (jumping == null)
+            jumping = false;
+        else jumping = !jumping;
+    }
+
 
 
 }
