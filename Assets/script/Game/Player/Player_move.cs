@@ -20,6 +20,7 @@ public class Player_move : MonoBehaviour
     private bool shake_true;
     private bool set_jumpingani;
     private bool land;
+    private int damage;
 
     void Awake()
     {
@@ -34,6 +35,7 @@ public class Player_move : MonoBehaviour
         _transform = transform;      //Transform 캐싱
         _moveVector = Vector3.zero;  //플레이어 이동벡터 초기화
         ani = GetComponent<Animator>();
+        damage = PlayerPrefs.GetInt("damage");
     }
 
     void OnEnable()
@@ -82,13 +84,20 @@ public class Player_move : MonoBehaviour
             this.transform.Translate(Vector3.down * Time.deltaTime * 15.0f);
             ani.SetFloat("jump_x", this.transform.position.x);
             ani.SetFloat("jump_y", this.transform.position.y);
-
+            
             if (this.transform.position.y <= 0)
             {
                 land = false;
                 set_jumpingani = false;
                 shake_true = true;
                 ani.SetTrigger("end");
+
+                GameObject[] monsters;
+                monsters = GameObject.FindGameObjectsWithTag("monster");
+                for (int i = 0; i < monsters.Length; i++)
+                {
+                    monsters[i].gameObject.GetComponent<Monster_Status>().get_damage(damage);
+                }
             }
         }
         else

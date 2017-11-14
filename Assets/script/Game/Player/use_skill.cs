@@ -11,6 +11,7 @@ public class use_skill : MonoBehaviour {
     public GameObject dog_attack;
     public GameObject monkey_shield;
     public GameObject monkey_attack;
+    public GameObject dog_shield;
 
     private bool jumping;
 
@@ -94,7 +95,7 @@ public class use_skill : MonoBehaviour {
                 Instantiate(monkey_shield, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego3").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("alter_ego3").gameObject.transform.rotation);
                 break;
             case 5:
-                this.gameObject.transform.Find("5").gameObject.transform.Find("pyramid").gameObject.SetActive(true);
+                Instantiate(dog_shield, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos1").gameObject.transform.rotation);
                 break;
         }
     }
