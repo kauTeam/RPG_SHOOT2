@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Game\Player\character\2\Sheep_Attack.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Game\Player\character\4\Monkey_Attack.cs">
     <Files>
       <File FileName="Assets\script\Stat\skill_button_control.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Shop\character\character_button_control.cs" Line="1" Column="1" />
@@ -8,7 +8,8 @@
       <File FileName="Assets\script\Game\Player\Player_move.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Game\UI\joystick.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Stat\character_button.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Game\Player\character\2\Sheep_Attack.cs" Line="14" Column="35" />
+      <File FileName="Assets\script\Game\Player\character\2\Sheep_Attack.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Game\Player\character\4\Monkey_Attack.cs" Line="12" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
