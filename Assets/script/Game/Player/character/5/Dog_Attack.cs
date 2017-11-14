@@ -24,8 +24,7 @@ public class Dog_Attack : MonoBehaviour {
         if(Enemy.tag == "monster")
         {
             count++;
-            print(count);
-            if(count == 50)
+            if(count == 40)
             { 
                 Enemy.gameObject.GetComponent<Monster_Status>().get_damage(damage);
                 count = 0;
