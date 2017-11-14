@@ -122,6 +122,8 @@
      <Compile Include="Assets\script\Main\Reset.cs" />
      <Compile Include="Assets\script\Main\SceneTrans.cs" />
      <Compile Include="Assets\script\Main\character_main.cs" />
+     <Compile Include="Assets\script\Main\exp_bar.cs" />
+     <Compile Include="Assets\script\Main\txt\exp_txt.cs" />
      <Compile Include="Assets\script\Main\txt\level.cs" />
      <Compile Include="Assets\script\Main\txt\main_ticket.cs" />
      <Compile Include="Assets\script\Main\txt\money.cs" />

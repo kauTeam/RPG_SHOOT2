@@ -15,8 +15,8 @@ public class Monkey_Attack : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         this.transform.rotation = Quaternion.Euler(90, angle, 0);
-        angle++;
-        if(angle==45)
+        angle+=2;
+        if(angle>=45)
         {
             Destroy(this.gameObject);
         }
