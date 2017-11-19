@@ -37,9 +37,13 @@ public class Sheep_Attack : MonoBehaviour {
     {
         if (tan.tag == "monster")
         {
+			Vector3 pos = this.transform.position;
             tan.gameObject.GetComponent<Monster_Status>().get_damage(damage);
             Destroy(this.gameObject);
+			GameObject.Find ("Player").GetComponent<use_skill> ().DoHit (pos);
         }
        
     }
+		
+
 }

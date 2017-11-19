@@ -12,8 +12,8 @@ public class shield0 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Invoke("set_false", 2f);
-		
 	}
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag=="enemy_bullet")

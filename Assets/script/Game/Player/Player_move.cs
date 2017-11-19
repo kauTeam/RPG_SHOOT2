@@ -94,6 +94,7 @@ public class Player_move : MonoBehaviour
 
                 GameObject[] monsters;
                 monsters = GameObject.FindGameObjectsWithTag("monster");
+
                 for (int i = 0; i < monsters.Length; i++)
                 {
                     monsters[i].gameObject.GetComponent<Monster_Status>().get_damage(damage);
@@ -105,6 +106,7 @@ public class Player_move : MonoBehaviour
             //터치패드 입력 받기
             HandleInput();
         }
+
 
         if (shake_true)
         {

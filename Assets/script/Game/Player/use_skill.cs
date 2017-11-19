@@ -13,6 +13,8 @@ public class use_skill : MonoBehaviour {
     public GameObject monkey_attack;
     public GameObject dog_shield;
 
+	public GameObject Hit;
+
     private bool jumping;
 
     float jump = 1f;
@@ -47,7 +49,7 @@ public class use_skill : MonoBehaviour {
                 break;
             case 1:
                 Instantiate(carrot_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);   
-                    //스킬구현
+			     //스킬구현
                 break;
             case 2:
                 Instantiate(sheep_attack, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.position, this.gameObject.transform.Find(character.ToString()).gameObject.transform.Find("shoot_pos").gameObject.transform.rotation);
@@ -127,5 +129,12 @@ public class use_skill : MonoBehaviour {
             jumping = false;
         else jumping = !jumping;
     }
+
+	public void DoHit(Vector3 pos){
+		GameObject particleobj = Instantiate (Hit) as GameObject;
+		particleobj.transform.position = pos;
+		Destroy (particleobj,1.0f);
+	}
+		
 }
 

@@ -7,10 +7,14 @@ public class Dog_Attack : MonoBehaviour {
 
     int damage;
     int count;
+
+	public GameObject Circle;
+
     void Start()
     {
         damage = PlayerPrefs.GetInt("damage");
         Invoke("set_Destroy", 8f);
+		DoCircle ();
         count = 0;
     }
 
@@ -19,6 +23,7 @@ public class Dog_Attack : MonoBehaviour {
     {
         
     }
+
     private void OnTriggerStay(Collider Enemy)
     {
         if(Enemy.tag == "monster")
@@ -43,8 +48,15 @@ public class Dog_Attack : MonoBehaviour {
     {
         count = 0;
     }
+
     void set_Destroy()
     {
         Destroy(this.gameObject);
     }
+
+	void DoCircle(){
+		GameObject particleobj = Instantiate (Circle) as GameObject;
+		particleobj.transform.position = this.transform.position;
+		Destroy (particleobj,8.0f);
+	}
 }

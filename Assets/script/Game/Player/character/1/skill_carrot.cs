@@ -6,12 +6,15 @@ public class skill_carrot : MonoBehaviour {
     public int speed;
     int damage;
 
+
+	public GameObject explosion;
+
     // Use this for initialization
     void Start()
     {
         damage = PlayerPrefs.GetInt("damage");
     }
-
+		
     void Awake()
     {
         damage = PlayerPrefs.GetInt("damage");
@@ -25,6 +28,7 @@ public class skill_carrot : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
+
     }
     
 
@@ -34,7 +38,15 @@ public class skill_carrot : MonoBehaviour {
         if (enemy.tag == "monster")
         {
             enemy.gameObject.GetComponent<Monster_Status>().get_damage(damage*4);
-            Destroy(this.gameObject);
+			DoExplosion ();
+			Destroy(this.gameObject);
         }
     }
+
+	void DoExplosion(){
+		GameObject particleobj = Instantiate (explosion) as GameObject;
+		particleobj.transform.position = this.transform.position;
+		Destroy (particleobj,1.0f);
+	}
+		
 }
