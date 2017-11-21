@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class Pop_Up : MonoBehaviour {
 
-	public Text dmg_txt;
-	public Transform monster_pos;
+    TextMesh dmg_txt;
 
 	private Vector3  v;
 	private int damage;
 	// Use this for initialization
 	void Start () {
 		print ("start");
-		dmg_txt = this.GetComponentInChildren<Text> ();
+		dmg_txt = this.GetComponentInChildren<TextMesh> ();
 		damage= PlayerPrefs.GetInt("damage");
 		dmg_txt.text = "-"+damage.ToString();
 		StartCoroutine ("get_Damage");
@@ -21,7 +20,7 @@ public class Pop_Up : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		dmg_txt.rectTransform.Translate (0, 0.05f * Time.deltaTime * Time.timeScale, 0);
+        dmg_txt.transform.Translate(0, 0.05f * Time.deltaTime * Time.timeScale, 0);
 	}
 
 	IEnumerator get_Damage(){

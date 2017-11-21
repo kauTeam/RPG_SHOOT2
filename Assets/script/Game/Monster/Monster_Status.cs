@@ -43,7 +43,7 @@ public class Monster_Status : MonoBehaviour {
 	void Update () {
 		if (attacked) {
 			print ("attacked");
-			Vector3 v=new Vector3 (this.gameObject.transform.position.x + 5, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
+			Vector3 v=new Vector3 (this.gameObject.transform.position.x + 2, this.gameObject.transform.position.y+3, this.gameObject.transform.position.z);
 			Instantiate (dmg, v, Quaternion.identity);
 			attacked = false;
 		}
