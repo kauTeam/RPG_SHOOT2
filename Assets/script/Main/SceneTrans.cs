@@ -13,12 +13,8 @@ public class SceneTrans : MonoBehaviour {
     public void Trans_Dungun()
     {
         int stage = PlayerPrefs.GetInt("stage");
-        print(stage);
         int temp_stage1 = stage / 100;
         int temp_stage2 = stage % 100;
-        print(temp_stage1);
-        print(temp_stage2);
-        print("scene/Stage/Stage"+ temp_stage1.ToString()+"/" + temp_stage2.ToString());
         SceneManager.LoadScene("scene/Stage/Stage"+ temp_stage1.ToString()+"/" + temp_stage2.ToString());
     }
 
