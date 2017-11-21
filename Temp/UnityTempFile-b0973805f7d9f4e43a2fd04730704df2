@@ -2,11 +2,14 @@
 -target:library
 -nowarn:0169
 -langversion:4
--out:Temp/Assembly-CSharp-Editor-firstpass.dll
+-out:Temp/Assembly-CSharp-Editor.dll
 -unsafe
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
 -r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:Library/ScriptAssemblies/Assembly-CSharp.dll
+-r:Library/ScriptAssemblies/Assembly-CSharp-Editor-firstpass.dll
+-r:Library/ScriptAssemblies/Assembly-UnityScript-Editor-firstpass.dll
 -r:Library/FacebookSDK/Facebook.Unity.Settings.dll
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
@@ -15,6 +18,7 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll"
@@ -26,7 +30,6 @@
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:Assets/Vuforia/Editor/Scripts/Vuforia.UnityExtensions.Editor.dll
 -r:Assets/Vuforia/Scripts/Internal/Vuforia.UnityExtensions.dll
 -define:UNITY_5_3_OR_NEWER
@@ -99,13 +102,21 @@
 -define:UNITY_EDITOR_WIN
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
--define:ENABLE_VSTU
 -define:ENABLE_DUCK_TYPING
 -define:CROSS_PLATFORM_INPUT
 -define:MOBILE_INPUT
 -define:VUFORIA_ANDROID_SETTINGS
 -define:UNITY_HAS_GOOGLEVR
-"Assets/Standard Assets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs"
+"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/EffectControllerInspector.cs"
+"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/EffectToolBar.cs"
+"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/RenderEffectInspector.cs"
+"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/ShaderCustomEditor/ShaderMaterialsEditor.cs"
+"Assets/Particlecollection_Free samples/Plugins/Effect/Editor/XUIUtils.cs"
+Assets/Vuforia/Editor/Scripts/ComponentFactoryStarter/ComponentFactoryStarter.cs
+Assets/Vuforia/Editor/Scripts/ExtensionImport.cs
+Assets/Vuforia/Editor/Scripts/PostProcessBuildPlayer.cs
+Assets/Vuforia/Editor/Scripts/Unzipper/SharpZipLibUnzipper.cs
+Assets/Vuforia/Editor/Scripts/VuforiaConfigurationEditor.cs
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll"
