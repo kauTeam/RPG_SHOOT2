@@ -17,7 +17,7 @@ public class Game_control : MonoBehaviour {
 	public Text gold_text;
 	public Text exp_text;
     bool check = true;
-	// Use this for initialization
+    // Use this for initialization
 	void Start () {
 		gold_text = gold_text.GetComponent<Text>();
 		exp_text = exp_text.GetComponent<Text> ();
@@ -57,11 +57,15 @@ public class Game_control : MonoBehaviour {
                     {
                         PlayerPrefs.SetInt("exp", save);
                     }
-                    int temp_stage = PlayerPrefs.GetInt("stage");
-                    if (temp_stage < stage)
+                    stage = PlayerPrefs.GetInt("stage");
+                    stage++;
+                    print(stage);
+                    if(stage%100==10)
                     {
-                        PlayerPrefs.SetInt("stage", stage);
+                        stage += 100;
+                        stage -= 9;
                     }
+                    PlayerPrefs.SetInt("stage", stage);
                     check = false;
                 }
 			}
