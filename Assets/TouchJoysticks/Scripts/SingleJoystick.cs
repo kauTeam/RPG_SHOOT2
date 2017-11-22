@@ -123,7 +123,7 @@ public class SingleJoystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IP
                     currentPosition.y = Mathf.Clamp(currentPosition.y, 0, Screen.height - bgImage.rectTransform.sizeDelta.y);
 
                     // moves the entire joystick along with the drag  
-                    bgImage.rectTransform.position = currentPosition;
+                    //bgImage.rectTransform.position = currentPosition;
                 }
             }
         }
