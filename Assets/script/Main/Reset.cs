@@ -89,7 +89,7 @@ public class Reset : MonoBehaviour {
 		PlayerPrefs.SetInt ("useful_stat", 30);
 
         PlayerPrefs.SetInt("ticket", 1);
-        PlayerPrefs.SetInt ("stage", 101);
+        PlayerPrefs.SetInt ("stage", 601);
 		PlayerPrefs.SetString ("character_have", "0,1,2");
 		PlayerPrefs.SetInt ("level", 1);
 		PlayerPrefs.SetInt ("exp", 0);
