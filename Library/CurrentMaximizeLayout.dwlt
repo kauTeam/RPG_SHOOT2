@@ -22,10 +22,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 587
-  m_MinSize: {x: 913, y: 442}
-  m_MaxSize: {x: 22008, y: 10021}
+  m_MinSize: {x: 917, y: 442}
+  m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 4065
+  controlID: 4780
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 4066
+  controlID: 4781
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,14 +180,14 @@ MonoBehaviour:
     width: 563
     height: 261
   m_SceneLighting: 1
-  lastFramingTime: 3887.826601033984
+  lastFramingTime: 4103.967492707203
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 560, y: 214, z: 0}
+    m_Target: {x: 0.00014781952, y: 1.6104432, z: -6.6461477}
     speed: 2
-    m_Value: {x: 560, y: 214, z: 0}
+    m_Value: {x: 0.00014781952, y: 1.6104432, z: -6.6461477}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -214,9 +214,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.062062923, y: 0.19337967, z: -0.012307627, w: -0.97913474}
   m_Size:
-    m_Target: 465.5603
+    m_Target: 11.077394
     speed: 2
-    m_Value: 465.5603
+    m_Value: 11.077394
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -382,9 +382,9 @@ MonoBehaviour:
     height: 566
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 90470000
     m_LastClickedID: 0
-    m_ExpandedIDs: b0d4ffff68d7fffffcd9ffff9edcffff50ddffff02deffffb4deffffe4e0ffffdafbffff000000001a62000024620000
+    m_ExpandedIDs: 5878fffffc7bffff067cffff0689ffff568bffff1c8cffffb89bffffb0d4ffff68d7fffffcd9ffff9edcffff50ddffff02deffffb4deffffe4e0ffffdafbffff0000000024620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -469,19 +469,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/TouchJoysticks
+    - Assets/TouchJoysticks/DemoScenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/TouchJoysticks
+  - Assets/TouchJoysticks/DemoScenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\kimwo\Desktop\project\RPG_SHOOT2
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a6470000
-    m_LastClickedID: 18342
-    m_ExpandedIDs: 00000000e226000008270000b82700002e280000e8280000682900008a290000a22900008a2a00009c2a0000082c0000942d0000ac2e00003c2f0000722f0000ac2f0000f22f00001e3000004c30000098300000b8300000c43000004446000046460000484600004a4600004c4600004e46000000ca9a3bffffff7f
+    m_SelectedIDs: 8e470000
+    m_LastClickedID: 18318
+    m_ExpandedIDs: 00000000e226000008270000b82700002e280000e8280000682900008a290000a22900008a2a00009c2a0000082c0000942d0000ac2e00003c2f0000722f0000ac2f0000f22f00001e3000004c30000098300000b8300000c43000004446000046460000484600004a4600004c4600004e460000a647000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -534,9 +534,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 90470000
+    m_LastClickedInstanceID: 18320
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 903100001e2a0000382a00000000000066290000a62900001e5e0000fc6f0000462f00006ca1ffff9e1dfeff
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -561,7 +561,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 60}
+    m_ScrollPosition: {x: 0, y: 236}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &13
@@ -582,8 +582,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 587
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
