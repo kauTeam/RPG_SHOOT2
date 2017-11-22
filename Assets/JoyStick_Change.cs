@@ -26,7 +26,9 @@ public class JoyStick_Change : MonoBehaviour {
 			Vector2 pos2;
 
 			RectTransformUtility.ScreenPointToLocalPointInRectangle (parent.transform as RectTransform, Input.mousePosition, parent.worldCamera, out pos2);
-			img2.rectTransform.anchoredPosition = pos2;
+			if (pos2.x < 0) {
+				img2.rectTransform.anchoredPosition = pos2;
+			}
 		}
 
 	}

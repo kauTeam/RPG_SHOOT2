@@ -4,11 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-
-
 public class joystick : MonoBehaviour,IDragHandler,IPointerUpHandler,IPointerDownHandler {
-
-
 
 	private Image bgimg;
 	private Image stickimg;
@@ -29,7 +25,7 @@ public class joystick : MonoBehaviour,IDragHandler,IPointerUpHandler,IPointerDow
 			pos.x = (pos.x / bgimg.rectTransform.sizeDelta.x);
 			pos.y = (pos.y / bgimg.rectTransform.sizeDelta.y);
 
-			inputVector = new Vector3 (pos.x * 2 + 1, pos.y * 2 + 1, 0);
+			inputVector = new Vector3 (pos.x, pos.y, 0);
 			inputVector = (inputVector.magnitude > 1.0f) ? inputVector.normalized : inputVector;
 
 			stickimg.rectTransform.anchoredPosition = new Vector3 (inputVector.x * (bgimg.rectTransform.sizeDelta.x / 3), inputVector.y * (bgimg.rectTransform.sizeDelta.y / 3));
