@@ -3,13 +3,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Count_Trans.cs">
     <Files>
       <File FileName="Assets\script\Game\Player\use_skill.cs" Line="1" Column="1" />
-      <File FileName="Assets\Pop_Up.cs" Line="36" Column="3" />
+      <File FileName="Assets\Pop_Up.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Game\Player\character\2\Sheep_Attack.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Stat\txt\stat_txt.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Game\Player\Player_move.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Game\UI\joystick.cs" Line="1" Column="1" />
-      <File FileName="Assets\Count_Trans.cs" Line="25" Column="2" />
-      <File FileName="Assets\script\Game\UI\stop.cs" Line="21" Column="22" />
+      <File FileName="Assets\Count_Trans.cs" Line="32" Column="24" />
+      <File FileName="Assets\script\Game\UI\stop.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
