@@ -59,7 +59,6 @@ public class Game_control : MonoBehaviour {
                     }
                     stage = PlayerPrefs.GetInt("stage");
                     stage++;
-                    print(stage);
                     if(stage%100==10)
                     {
                         stage += 100;

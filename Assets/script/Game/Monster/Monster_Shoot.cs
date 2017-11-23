@@ -16,8 +16,8 @@ public class Monster_Shoot : MonoBehaviour {
 	float target_x;
 	float target_z;
 	public float attack_speed=1f;
-	public int damage=20;
-	public int speed = 1;
+	public int damage;
+	public int speed;
 	public int[] tan_speed = new int[7] ;
 	public bool[] type=new bool[16];
 	public int type_count=0;
