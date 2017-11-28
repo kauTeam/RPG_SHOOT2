@@ -1,12 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Game\Monster\Monster_Move.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\script\Game\AR\Cube\AR_Cube_Bullet.cs">
     <Files>
       <File FileName="Assets\script\Game\Monster\Monster_Shoot.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Game\UI\Game_control.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Main\Reset.cs" Line="1" Column="1" />
       <File FileName="Assets\script\Main\SceneTrans.cs" Line="1" Column="1" />
-      <File FileName="Assets\script\Game\Monster\Monster_Move.cs" Line="37" Column="5" />
+      <File FileName="Assets\script\Game\Monster\Monster_Move.cs" Line="1" Column="1" />
+      <File FileName="Assets\script\Game\AR\Cube\AR_Cube_Bullet.cs" Line="112" Column="50" />
+      <File FileName="Assets\script\Game\AR\Cube\ARsound.cs" Line="6" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
