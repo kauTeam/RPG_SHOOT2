@@ -19,6 +19,7 @@ public class AR_Cube_Bullet : MonoBehaviour {
     public bool AR_Player_Death;
     public int Cube_Num;
     public GameObject Player = null;
+	public GameObject BulletPrefab;
 
 
     // Use this for initialization
@@ -109,6 +110,7 @@ public class AR_Cube_Bullet : MonoBehaviour {
     public void OnMouseDown()
     {
         // this object was clicked - do something
+		ARsound.soundManager.PlaySound ();
         Destroy(this.gameObject);
     }
 }
