@@ -74,7 +74,10 @@ public class DB_control : MonoBehaviour {
 	
     public void write()
     {
-        if(login_join.user!=null)
+        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://rpgshoot2.firebaseio.com/");
+        databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
+
+        if (login_join.user!=null)
         {
             character_data data = new character_data();
             string json= JsonUtility.ToJson(data);
@@ -84,6 +87,9 @@ public class DB_control : MonoBehaviour {
 
     public void read()
     {
+        FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://rpgshoot2.firebaseio.com/");
+        databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
+
         FirebaseDatabase.DefaultInstance
             .GetReference("users").Child(login_join.user.UserId) // 읽어올 데이터 이름
             .GetValueAsync().ContinueWith(task =>
