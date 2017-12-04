@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "466952032028",
+    "firebase_url": "https://rpgshoot2.firebaseio.com",
+    "project_id": "rpgshoot2",
+    "storage_bucket": "rpgshoot2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466952032028:android:874a5ce7bcec3e27",
+        "android_client_info": {
+          "package_name": "com.kausoft.rpgshoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466952032028-6cdlhgaok9jt3mouvk45vtr3i0r1dpbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeth1uB009ltDSjaNZwGQaZv3czq9oc2c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,7 +9,8 @@ public class login_scene_control : MonoBehaviour {
     public GameObject password_panel;
     public GameObject login_panel;
     public GameObject enter_panel;
-	// Use this for initialization
+    public GameObject success_panel;
+    // Use this for initialization
 	void Start () {
 		
 	}
@@ -21,6 +22,7 @@ public class login_scene_control : MonoBehaviour {
 
     public void close()
     {
+        success_panel.SetActive(false);
         enter_panel.SetActive(false);
         email_panel.gameObject.SetActive(false);
         password_panel.gameObject.SetActive(false);
