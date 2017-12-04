@@ -40,6 +40,10 @@ public class SceneTrans : MonoBehaviour {
     {
         SceneManager.LoadScene("scene/Stat");
     }
+	public void Trans_Stage1()
+	{
+		SceneManager.LoadScene("scene/Stage/Stage1/1");
+	}
 	// Use this for initialization
 	void Start () {
 		
