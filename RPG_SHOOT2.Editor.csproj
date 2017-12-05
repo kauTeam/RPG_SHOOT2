@@ -255,6 +255,7 @@
     <None Include="Assets\Plugins\Android\play-services-tasks-license-11.6.0\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\play-services-tasks-license-11.6.0\third_party_licenses.txt" />
     <None Include="Assets\Plugins\iOS\Vuforia.UnityExtensions.iOS.XML" />
+    <None Include="Assets\Resources\Plane_No_zTest.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

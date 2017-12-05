@@ -161,6 +161,7 @@
     <Compile Include="Assets\Vuforia\Scripts\WireframeBehaviour.cs" />
     <Compile Include="Assets\Vuforia\Scripts\WireframeTrackableEventHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\WordBehaviour.cs" />
+    <Compile Include="Assets\script\AutoFade.cs" />
     <Compile Include="Assets\script\Game\AR\AR_GameControll.cs" />
     <Compile Include="Assets\script\Game\AR\AR_Player.cs" />
     <Compile Include="Assets\script\Game\AR\AR_Player_HP_Bar.cs" />
@@ -217,6 +218,7 @@
     <Compile Include="Assets\script\Shop\shop_money.cs" />
     <Compile Include="Assets\script\Shop\stat\shap_txt_control.cs" />
     <Compile Include="Assets\script\Shop\stat\shop_stat_button_control.cs" />
+    <Compile Include="Assets\script\StartScene.cs" />
     <Compile Include="Assets\script\Stat\Skill_img_control.cs" />
     <Compile Include="Assets\script\Stat\character.cs" />
     <Compile Include="Assets\script\Stat\character_button.cs" />
@@ -278,6 +280,7 @@
     <None Include="Assets\Plugins\Android\play-services-tasks-license-11.6.0\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\play-services-tasks-license-11.6.0\third_party_licenses.txt" />
     <None Include="Assets\Plugins\iOS\Vuforia.UnityExtensions.iOS.XML" />
+    <None Include="Assets\Resources\Plane_No_zTest.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

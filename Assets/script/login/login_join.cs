@@ -16,6 +16,9 @@ public class login_join : MonoBehaviour {
     public GameObject success_panel;
     public GameObject login_panel;
 
+    Color _fadeColor = new Color(0f, 0f, 0f, 1f);
+
+
     [SerializeField]
     string email;
     [SerializeField]
@@ -118,9 +121,44 @@ public class login_join : MonoBehaviour {
         LoginUser();
     }
 
+    public void main_login()
+    {
+        auth = FirebaseAuth.DefaultInstance;
+        auth.StateChanged += AuthStateChanged;
+        AuthStateChanged(this, null);
+
+        email_login = PlayerPrefs.GetString("id");
+        password_login = PlayerPrefs.GetString("password");
+        auth.SignInWithEmailAndPasswordAsync(email_login, password_login).ContinueWith(task =>
+        {
+            if (task.IsCanceled)
+            {
+                Debug.LogError("SignInWithEmailAndPasswordAsync was canceled.");
+                AutoFade.LoadLevel("login", 1, 1, _fadeColor);
+                return;
+            }
+            if (task.IsFaulted)
+            {
+                Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+                AutoFade.LoadLevel("login", 1, 1, _fadeColor);
+                return;
+            }
+
+            Firebase.Auth.FirebaseUser newUser = task.Result;
+            Debug.LogFormat("User signed in successfully: {0} ({1})",
+                newUser.DisplayName, newUser.UserId);
+            PlayerPrefs.SetString("id", email_login);
+            PlayerPrefs.SetString("password", password_login);
+            AuthStateChanged(this, null);
+            //씬전환
+            AutoFade.LoadLevel("Main", 1, 1, _fadeColor);
+        });
+
+    }
+
     void LoginUser()
     {
-        auth.SignInWithEmailAndPasswordAsync(email, password).ContinueWith(task =>
+        auth.SignInWithEmailAndPasswordAsync(email_login, password_login).ContinueWith(task =>
         {
             if (task.IsCanceled)
             {
@@ -142,7 +180,7 @@ public class login_join : MonoBehaviour {
             PlayerPrefs.SetString("password", password_login);
             AuthStateChanged(this, null);
             //씬전환
-            SceneManager.LoadScene("scene/Main");
+            AutoFade.LoadLevel("Main", 1, 1, _fadeColor);
         });
     }
     void AuthStateChanged(object sender, System.EventArgs eventArgs)
