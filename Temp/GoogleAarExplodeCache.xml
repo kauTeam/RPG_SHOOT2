@@ -1,7 +1,7 @@
 <aars>
   <explodeData>
     <aar>firebase-analytics-11.6.0</aar>
-    <modificationTime>2017-12-04T11:26:16.5135381+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.5895752+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/firebase-analytics-11.6.0.aar</path>
@@ -12,7 +12,7 @@
   </explodeData>
   <explodeData>
     <aar>firebase-analytics-impl-11.6.0</aar>
-    <modificationTime>2017-12-04T11:26:16.5300797+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.5923302+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/firebase-analytics-impl-11.6.0.aar</path>
@@ -56,7 +56,7 @@
   </explodeData>
   <explodeData>
     <aar>firebase-auth-11.6.0</aar>
-    <modificationTime>2017-12-04T11:26:16.4729278+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.6292164+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/firebase-auth-11.6.0.aar</path>
@@ -144,7 +144,7 @@
   </explodeData>
   <explodeData>
     <aar>play-services-base-11.6.0</aar>
-    <modificationTime>2017-12-04T11:26:16.4894712+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8041809+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/play-services-base-11.6.0.aar</path>
@@ -166,7 +166,7 @@
   </explodeData>
   <explodeData>
     <aar>play-services-basement-11.6.0</aar>
-    <modificationTime>2017-12-04T11:26:16.5907419+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8152081+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/play-services-basement-11.6.0.aar</path>
@@ -188,7 +188,7 @@
   </explodeData>
   <explodeData>
     <aar>play-services-tasks-11.6.0</aar>
-    <modificationTime>2017-12-04T11:26:16.5731946+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8235268+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/play-services-tasks-11.6.0.aar</path>
@@ -221,7 +221,7 @@
   </explodeData>
   <explodeData>
     <aar>support-compat-25.2.0</aar>
-    <modificationTime>2017-12-04T11:26:16.7807464+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8437030+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/support-compat-25.2.0.aar</path>
@@ -232,7 +232,7 @@
   </explodeData>
   <explodeData>
     <aar>support-core-ui-25.2.0</aar>
-    <modificationTime>2017-12-04T11:26:16.7667090+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8457075+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/support-core-ui-25.2.0.aar</path>
@@ -243,7 +243,7 @@
   </explodeData>
   <explodeData>
     <aar>support-core-utils-25.2.0</aar>
-    <modificationTime>2017-12-04T11:26:16.7541789+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8467106+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/support-core-utils-25.2.0.aar</path>
@@ -254,7 +254,7 @@
   </explodeData>
   <explodeData>
     <aar>support-fragment-25.2.0</aar>
-    <modificationTime>2017-12-04T11:26:16.7235948+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8487257+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/support-fragment-25.2.0.aar</path>
@@ -265,7 +265,7 @@
   </explodeData>
   <explodeData>
     <aar>support-media-compat-25.2.0</aar>
-    <modificationTime>2017-12-04T11:26:16.7386347+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8513497+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/support-media-compat-25.2.0.aar</path>
@@ -276,7 +276,7 @@
   </explodeData>
   <explodeData>
     <aar>support-v4-25.2.0</aar>
-    <modificationTime>2017-12-04T11:26:16.7060475+09:00</modificationTime>
+    <modificationTime>2017-12-06T13:42:10.8529758+09:00</modificationTime>
     <explode>false</explode>
     <bundleId>com.kausoft.rpgshoot</bundleId>
     <path>Assets/Plugins/Android/support-v4-25.2.0.aar</path>

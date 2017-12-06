@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class start_stage : MonoBehaviour {
 
-    int cur;
-    string name;
+   // int cur;
+    //string name;
 	// Use this for initialization
 	void Awake () {
-        print("ddd\n");
+        /*print("ddd\n");
         cur = PlayerPrefs.GetInt("cur_stage");
         print(cur);
         for(int i = 2; i < 5; i++)
@@ -20,7 +20,7 @@ public class start_stage : MonoBehaviour {
             GameObject.Find(name).transform.GetChild(1).gameObject.SetActive(false);
             GameObject.Find(name).transform.GetChild(0).gameObject.SetActive(true);
 
-        }
+        }*/
 		
 	}
 	

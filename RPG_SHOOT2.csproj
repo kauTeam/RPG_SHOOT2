@@ -64,6 +64,9 @@
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
     </Reference>
@@ -102,12 +105,6 @@
     </Reference>
     <Reference Include="UnityEditor">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +191,8 @@
     <Compile Include="Assets\script\Game\Player\character\5\Dog_Attack.cs" />
     <Compile Include="Assets\script\Game\Player\character\5\Dog_Shield.cs" />
     <Compile Include="Assets\script\Game\Player\use_skill.cs" />
+    <Compile Include="Assets\script\Game\Stage\StageButton.cs" />
+    <Compile Include="Assets\script\Game\Stage\StageButtonSet.cs" />
     <Compile Include="Assets\script\Game\UI\Game_control.cs" />
     <Compile Include="Assets\script\Game\UI\Potion.cs" />
     <Compile Include="Assets\script\Game\UI\User_HP_Bar.cs" />

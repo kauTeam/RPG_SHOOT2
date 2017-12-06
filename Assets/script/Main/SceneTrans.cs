@@ -10,6 +10,7 @@ public class SceneTrans : MonoBehaviour {
     int temp_stage2;
     int current;
     public Canvas entry;
+    public Canvas Stage_Canvas;
 
     Color _fadeColor = new Color(0f, 0f, 0f, 1f);
     public void Trans_Main()
@@ -48,37 +49,47 @@ public class SceneTrans : MonoBehaviour {
     {
         AutoFade.LoadLevel("scene/Stat", 1, 1, _fadeColor);  
     }
-	public void Trans_Stage1()
-	{
-        AutoFade.LoadLevel("scene/Stage/Stage1/1", 1, 1, _fadeColor);
+    public void Trans_Stage1()
+    {
+        if (current >=1)
+        {
+            GameObject.Find("Main Camera").GetComponent<StageButtonSet>().st(1);
+            Stage_Canvas.gameObject.SetActive(true);
+        }
+        else entry.gameObject.SetActive(true);
 
+    
 	}
     public void Trans_Stage2()
     {
-        print(current);
-        if (current >= 2)
+        if (current >=2)
         {
-            AutoFade.LoadLevel("scene/Stage/Stage2/1", 1, 1, _fadeColor);
-          
+            GameObject.Find("Main Camera").GetComponent<StageButtonSet>().st(2);
+            Stage_Canvas.gameObject.SetActive(true);
         }
         else entry.gameObject.SetActive(true);
     }
     public void Trans_Stage3()
     {
-        if (current >= 3)
+        if (current >=3)
         {
-            AutoFade.LoadLevel("scene/Stage/Stage3/1", 1, 1, _fadeColor);
-       
+            GameObject.Find("Main Camera").GetComponent<StageButtonSet>().st(3);
+            Stage_Canvas.gameObject.SetActive(true);
         }
         else entry.gameObject.SetActive(true);
     }
     public void Trans_Stage4()
     {
-        if (current >= 4)
+        if (current >=4)
         {
-            AutoFade.LoadLevel("scene/Stage/Stage4/1", 1, 1, _fadeColor);
+            GameObject.Find("Main Camera").GetComponent<StageButtonSet>().st(4);
+            Stage_Canvas.gameObject.SetActive(true);
         }
         else entry.gameObject.SetActive(true);
+    }
+    public void Close_Stage()
+    {
+        Stage_Canvas.gameObject.SetActive(false);
     }
 
     public void log_out()

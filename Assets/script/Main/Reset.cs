@@ -47,7 +47,7 @@ public class Reset : MonoBehaviour {
 		}
 
 		if (!PlayerPrefs.HasKey ("stage")) {
-			PlayerPrefs.SetInt ("stage", 101);
+			PlayerPrefs.SetInt ("stage", 201);
 		}
 
 		if (!PlayerPrefs.HasKey ("character_have")) {
@@ -72,7 +72,7 @@ public class Reset : MonoBehaviour {
 
         if (!PlayerPrefs.HasKey("cur_stage"))
         {
-            PlayerPrefs.SetInt("cur_stage", 1);
+            PlayerPrefs.SetInt("cur_stage", 2);
         }
 
     }
@@ -94,7 +94,7 @@ public class Reset : MonoBehaviour {
 		PlayerPrefs.SetInt ("useful_stat", 30);
 
         PlayerPrefs.SetInt("ticket", 1);
-        PlayerPrefs.SetInt ("stage", 101);
+        PlayerPrefs.SetInt ("stage", 201);
 		PlayerPrefs.SetString ("character_have", "0,1,2");
 		PlayerPrefs.SetInt ("level", 1);
 		PlayerPrefs.SetInt ("exp", 0);
@@ -102,6 +102,7 @@ public class Reset : MonoBehaviour {
 		PlayerPrefs.SetInt ("now_character", 0);
 	
 		PlayerPrefs.SetInt ("money", 20000);
+        PlayerPrefs.SetInt("cur_stage", 2);
 		
 	}
 
