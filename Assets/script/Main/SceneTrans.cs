@@ -15,6 +15,7 @@ public class SceneTrans : MonoBehaviour {
     Color _fadeColor = new Color(0f, 0f, 0f, 1f);
     public void Trans_Main()
 	{
+        GameObject.Find("Main Camera").GetComponent<DB_control>().write();
         AutoFade.LoadLevel("Main", 1, 1, _fadeColor);
     }
 
@@ -25,6 +26,7 @@ public class SceneTrans : MonoBehaviour {
         {
             count--;
             PlayerPrefs.SetInt("ticket",count);
+            GameObject.Find("Main Camera").GetComponent<DB_control>().write();
             AutoFade.LoadLevel("scene/AR", 1, 1, _fadeColor);
         }
     }
@@ -60,6 +62,11 @@ public class SceneTrans : MonoBehaviour {
 
     
 	}
+    public void test()
+    {
+        AutoFade.LoadLevel("scene/Stage/Stage1/1", 1, 1, _fadeColor);
+
+    }
     public void Trans_Stage2()
     {
         if (current >=2)

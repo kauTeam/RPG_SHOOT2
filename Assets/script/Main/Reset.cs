@@ -76,8 +76,12 @@ public class Reset : MonoBehaviour {
         }
 
     }
-
-	public void reset()
+    public void button_reset()
+    {
+        reset();
+        GameObject.Find("Main Camera").GetComponent<DB_control>().write();
+    }
+	public static void reset()
 	{
 		PlayerPrefs.SetInt ("bullet_count", 10);
 		PlayerPrefs.SetInt ("damage", 1);

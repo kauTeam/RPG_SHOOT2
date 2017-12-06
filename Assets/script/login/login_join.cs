@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//login
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,7 +8,8 @@ using UnityEngine.SceneManagement;
 using Firebase.Auth;
 
 
-public class login_join : MonoBehaviour {
+public class login_join : MonoBehaviour
+{
 
 
     public static FirebaseUser user;
@@ -51,28 +54,30 @@ public class login_join : MonoBehaviour {
 
     }
     // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void join()
     {
         email = inputTextEmail.text;
         password = inputTextPassword.text;
         password_confirm = inputTextPassword_confirm.text;
-        
+
         if (password_confirm == "" || password == "" || email == "")
         {
             enter_panel.SetActive(true);
             return;
         }
 
-        if (password_confirm!=password)
+        if (password_confirm != password)
         {
             password_panel.SetActive(true);
             return;
@@ -102,22 +107,28 @@ public class login_join : MonoBehaviour {
             Firebase.Auth.FirebaseUser newUser = task.Result;
             Debug.LogFormat("Firebase user created successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
+            Reset.reset();
+            this.gameObject.GetComponent<DB_control>().Write_outside(newUser.UserId);
+
             success_panel.SetActive(true);
+
+
         });
     }
 
 
     public void login()
     {
+        PlayerPrefs.SetInt("level", 100);
         email_login = inputTextEmail_login.text;
         password_login = inputTextPassword_login.text;
-        
+
         if (password_login == "" || email_login == "")
         {
             enter_panel.SetActive(true);
             return;
         }
-        
+
         LoginUser();
     }
 
@@ -150,6 +161,7 @@ public class login_join : MonoBehaviour {
             PlayerPrefs.SetString("id", email_login);
             PlayerPrefs.SetString("password", password_login);
             AuthStateChanged(this, null);
+            this.gameObject.GetComponent<DB_control>().read();
             //씬전환
             AutoFade.LoadLevel("Main", 1, 1, _fadeColor);
         });
@@ -179,6 +191,8 @@ public class login_join : MonoBehaviour {
             PlayerPrefs.SetString("id", email_login);
             PlayerPrefs.SetString("password", password_login);
             AuthStateChanged(this, null);
+            this.gameObject.GetComponent<DB_control>().read();
+
             //씬전환
             AutoFade.LoadLevel("Main", 1, 1, _fadeColor);
         });

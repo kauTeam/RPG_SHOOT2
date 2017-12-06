@@ -1,14 +1,16 @@
-﻿using System.Collections;
+﻿// DB
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Unity.Editor;
 using Firebase.Database;
 using Firebase;
- 
 
 
 
-public class DB_control : MonoBehaviour {
+
+public class DB_control : MonoBehaviour
+{
 
     DatabaseReference databaseReference;
 
@@ -38,26 +40,26 @@ public class DB_control : MonoBehaviour {
         public character_data()
         {
 
-            bullet_count=PlayerPrefs.GetInt("bullet_count");
-            damage=PlayerPrefs.GetInt("damage");
-            hp=PlayerPrefs.GetInt("hp");
-            mp=PlayerPrefs.GetInt("mp");
-            mp_recover=PlayerPrefs.GetInt("mp_recover");
-            max_bullet_count=PlayerPrefs.GetInt("max_bullet_count");
-            max_damage=PlayerPrefs.GetInt("max_damage");
-            max_hp=PlayerPrefs.GetInt("max_hp");
-            max_mp=PlayerPrefs.GetInt("max_mp");
+            bullet_count = PlayerPrefs.GetInt("bullet_count");
+            damage = PlayerPrefs.GetInt("damage");
+            hp = PlayerPrefs.GetInt("hp");
+            mp = PlayerPrefs.GetInt("mp");
+            mp_recover = PlayerPrefs.GetInt("mp_recover");
+            max_bullet_count = PlayerPrefs.GetInt("max_bullet_count");
+            max_damage = PlayerPrefs.GetInt("max_damage");
+            max_hp = PlayerPrefs.GetInt("max_hp");
+            max_mp = PlayerPrefs.GetInt("max_mp");
             max_mp_recover = PlayerPrefs.GetInt("max_mp_recover");
             useful_stat = PlayerPrefs.GetInt("useful_stat");
 
             ticket = PlayerPrefs.GetInt("ticket");
             stage = PlayerPrefs.GetInt("stage");
-            character_have=PlayerPrefs.GetString("character_have");
+            character_have = PlayerPrefs.GetString("character_have");
             level = PlayerPrefs.GetInt("level");
             exp = PlayerPrefs.GetInt("exp");
             now_character = PlayerPrefs.GetInt("now_character");
             money = PlayerPrefs.GetInt("money");
-         }
+        }
     }
 
     private void Awake()
@@ -68,19 +70,28 @@ public class DB_control : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start () {
-		
-	}
-	
+    void Start()
+    {
+
+    }
+
+    public void Write_outside(string name)
+    {
+        character_data data = new character_data();
+        string json = JsonUtility.ToJson(data);
+        databaseReference.Child("users").Child(name).SetRawJsonValueAsync(json);
+    }
+
+
     public void write()
     {
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://rpgshoot2.firebaseio.com/");
         databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
 
-        if (login_join.user!=null)
+        if (login_join.user != null)
         {
             character_data data = new character_data();
-            string json= JsonUtility.ToJson(data);
+            string json = JsonUtility.ToJson(data);
             databaseReference.Child("users").Child(login_join.user.UserId).SetRawJsonValueAsync(json);
         }
     }
@@ -125,14 +136,15 @@ public class DB_control : MonoBehaviour {
             });
 
     }
-    
+
 
 
 
 
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+
+    }
 }

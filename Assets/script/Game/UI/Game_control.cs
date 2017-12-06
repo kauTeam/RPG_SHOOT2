@@ -40,7 +40,6 @@ public class Game_control : MonoBehaviour {
                     int now_gold = PlayerPrefs.GetInt("money");
                     now_gold += gold;
                     PlayerPrefs.SetInt("money", now_gold);
-                    win.SetActive(true);
                     gold_text.text = gold.ToString() + " GOLD";
                     exp_text.text = exp.ToString() + " EXP";
                     int save;
@@ -65,6 +64,8 @@ public class Game_control : MonoBehaviour {
                         stage -= 9;
                     }
                     PlayerPrefs.SetInt("stage", stage);
+                    GameObject.Find("Main Camera").GetComponent<DB_control>().write();
+                    win.SetActive(true);
                     check = false;
                 }
 			}
