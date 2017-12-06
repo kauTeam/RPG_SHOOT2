@@ -230,6 +230,7 @@
     <Compile Include="Assets\script\login\login_join.cs" />
     <Compile Include="Assets\script\login\login_scene_control.cs" />
     <Compile Include="Assets\stage1_click.cs" />
+    <Compile Include="Assets\start_stage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Firebase\Editor\AppDependencies.xml" />

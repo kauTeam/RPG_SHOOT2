@@ -70,7 +70,12 @@ public class Reset : MonoBehaviour {
 			PlayerPrefs.SetInt ("money", 0);
 		}
 
-	}
+        if (!PlayerPrefs.HasKey("cur_stage"))
+        {
+            PlayerPrefs.SetInt("cur_stage", 1);
+        }
+
+    }
 
 	public void reset()
 	{
