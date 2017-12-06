@@ -68,7 +68,10 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
-            this.gameObject.transform.Find("0").gameObject.SetActive(true);
+            if (this.gameObject.transform.Find("0") != null)
+            {
+                this.gameObject.transform.Find("0").gameObject.SetActive(true);
+            }
             /*
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
@@ -91,8 +94,11 @@ namespace Vuforia
 
         private void OnTrackingLost()
         {
-            this.gameObject.transform.Find("0").gameObject.SetActive(false);
-            /*
+            if (this.gameObject.transform.Find("0") != null)
+            {
+                this.gameObject.transform.Find("0").gameObject.SetActive(false);
+            }
+                /*
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
