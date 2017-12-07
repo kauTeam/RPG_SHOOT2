@@ -18,7 +18,11 @@ public class SceneTrans : MonoBehaviour {
         GameObject.Find("Main Camera").GetComponent<DB_control>().write();
         AutoFade.LoadLevel("Main", 1, 1, _fadeColor);
     }
-
+    public void game_end()
+    {
+        Application.Quit();
+    }
+    
     public void Trans_AR()
     {
         int count = PlayerPrefs.GetInt("ticket");
