@@ -1,0 +1,288 @@
+<aars>
+  <explodeData>
+    <aar>firebase-analytics-11.6.0</aar>
+    <modificationTime>2017-12-06T19:04:21.6239145+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/firebase-analytics-11.6.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-analytics-impl-11.6.0</aar>
+    <modificationTime>2017-12-06T19:04:21.6395412+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/firebase-analytics-impl-11.6.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-analytics-impl-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-analytics-impl-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-analytics-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-analytics-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-app-unity-4.3.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-app-unity-4.3.0</path>
+    <targetAbi>armv7</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-auth-11.6.0</aar>
+    <modificationTime>2017-12-06T19:04:21.6707945+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/firebase-auth-11.6.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-auth-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-auth-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-auth-unity-4.3.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-auth-unity-4.3.0</path>
+    <targetAbi>armv7</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-common-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-common-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-common-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-common-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-core-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-core-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-iid-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-iid-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>firebase-iid-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\firebase-iid-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>play-services-base-11.6.0</aar>
+    <modificationTime>2017-12-06T19:04:21.8583145+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/play-services-base-11.6.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>play-services-base-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\play-services-base-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>play-services-basement-11.6.0</aar>
+    <modificationTime>2017-12-06T19:04:21.8739412+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/play-services-basement-11.6.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>play-services-basement-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\play-services-basement-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>play-services-tasks-11.6.0</aar>
+    <modificationTime>2017-12-06T19:04:21.8895679+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/play-services-tasks-11.6.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>play-services-tasks-license-11.6.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android\play-services-tasks-license-11.6.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>support-annotations-25.2.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/support-annotations-25.2.0.jar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>support-compat-25.2.0</aar>
+    <modificationTime>2017-12-06T19:04:21.9051954+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/support-compat-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>support-core-ui-25.2.0</aar>
+    <modificationTime>2017-12-06T19:04:21.9051954+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/support-core-ui-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>support-core-utils-25.2.0</aar>
+    <modificationTime>2017-12-06T19:04:21.9051954+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/support-core-utils-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>support-fragment-25.2.0</aar>
+    <modificationTime>2017-12-06T19:04:21.9051954+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/support-fragment-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>support-media-compat-25.2.0</aar>
+    <modificationTime>2017-12-06T19:04:21.9051954+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/support-media-compat-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>support-v4-25.2.0</aar>
+    <modificationTime>2017-12-06T19:04:21.9051954+09:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.kausoft.rpgshoot</bundleId>
+    <path>Assets/Plugins/Android/support-v4-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+</aars>

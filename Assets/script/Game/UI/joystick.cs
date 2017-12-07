@@ -14,7 +14,6 @@ public class joystick : MonoBehaviour,IDragHandler,IPointerUpHandler,IPointerDow
 	void Start () {
 		bgimg = GetComponent<Image> ();
 		stickimg = transform.GetChild (0).GetComponent<Image> ();
-		
 	}
 
 

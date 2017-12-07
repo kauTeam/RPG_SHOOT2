@@ -32,15 +32,19 @@ public class Count_Trans : MonoBehaviour {
 			second = Time.realtimeSinceStartup - start;
 			start = Time.realtimeSinceStartup;
 			cnt -= second;
+            print("test" + cnt);
 			if (cnt <= 0.0f) {
 				chk = false;
 			}
 			else if (cnt <= 1.0f) {
+                print(cnt);
 				count.text = "GO!";
 			} else {
+                print(cnt);
 				count.text = get_string (cnt);
 			}
 		} else {
+            print("go");
 			Destroy (this.gameObject);
 			Time.timeScale = 1;
 		}
