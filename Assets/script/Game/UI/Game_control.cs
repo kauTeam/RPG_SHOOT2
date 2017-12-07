@@ -56,14 +56,14 @@ public class Game_control : MonoBehaviour {
                     {
                         PlayerPrefs.SetInt("exp", save);
                     }
-                    stage = PlayerPrefs.GetInt("stage");
-                    stage++;
-                    if(stage%100==10)
+                    int temp_stage = PlayerPrefs.GetInt("stage");
+                    temp_stage++;
+                    if(temp_stage%100==10)
                     {
-                        stage += 100;
-                        stage -= 9;
+                        temp_stage += 100;
+                        temp_stage -= 9;
                     }
-                    PlayerPrefs.SetInt("stage", stage);
+                    PlayerPrefs.SetInt("stage", temp_stage);
                     GameObject.Find("Main Camera").GetComponent<DB_control>().write();
                     win.SetActive(true);
                     check = false;

@@ -32,23 +32,20 @@ public class scene_trans : MonoBehaviour {
     }
     public void Restart()
     {
-        stage = PlayerPrefs.GetInt("stage");
-        if (temp_stage2 == 1)
-        {
-            stage -= 100;
-            stage += 9;
-        }
-        else
-            stage -= 1;
-        temp_stage1 = stage / 100;
-        temp_stage2 = stage % 100;
-        SceneManager.LoadScene("scene/Stage/Stage" + temp_stage1.ToString() + "/" + temp_stage2.ToString());
+        int stage=GameObject.Find("Game_Controll").GetComponent<Game_control>().stage;
+        print(stage);
+        SceneManager.LoadScene("scene/Stage/Stage" + (stage/100).ToString() + "/" + (stage%10).ToString());
     }
     public void Next_Stage()
     {
-        stage = PlayerPrefs.GetInt("stage");
-        temp_stage1 = stage / 100;
-        temp_stage2 = stage % 100;
-        SceneManager.LoadScene("scene/Stage/Stage" + temp_stage1.ToString() + "/" + temp_stage2.ToString());
+        int stage = GameObject.Find("Game_Controll").GetComponent<Game_control>().stage;
+        print(stage);
+        if ((stage % 10) == 0)
+        {
+            SceneManager.LoadScene("scene/Stage/Stage" + ((stage / 100) + 1).ToString() + "/1" );
+        }
+        else {
+            SceneManager.LoadScene("scene/Stage/Stage" + (stage / 100).ToString() + "/" + ((stage % 10)+1).ToString());
+        }
     }
 }
