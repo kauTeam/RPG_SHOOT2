@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StageButtonSet : MonoBehaviour {
 
     public Button[] Stage_Button;
     public Sprite[] SpriteImage;
-
+    public GameObject deny_panel;
     public void st(int put_stage)
     {
         int stage = PlayerPrefs.GetInt("stage");
@@ -41,8 +42,28 @@ public class StageButtonSet : MonoBehaviour {
         }
 
     }
-    // Use this for initialization
-    void Start () {
+
+    public void trans(int i)
+    {
+        int click = GameObject.Find("Main Camera").GetComponent<SceneTrans>().get_check_click();
+        if (PlayerPrefs.GetInt("stage")>=(click*100+i))
+        {
+            SceneManager.LoadScene("scene/Stage/Stage" + click.ToString() + "/" + i.ToString());
+        }
+        else
+        {
+            deny_panel.SetActive(true);
+        }
+    }
+
+
+
+
+
+
+
+        // Use this for initialization
+        void Start () {
 
     }
 	

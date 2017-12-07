@@ -11,6 +11,7 @@ public class SceneTrans : MonoBehaviour {
     int current;
     public Canvas entry;
     public Canvas Stage_Canvas;
+    public int click_check;
 
     Color _fadeColor = new Color(0f, 0f, 0f, 1f);
     public void Trans_Main()
@@ -63,8 +64,7 @@ public class SceneTrans : MonoBehaviour {
             Stage_Canvas.gameObject.SetActive(true);
         }
         else entry.gameObject.SetActive(true);
-
-    
+        click_check = 1;   
 	}
     public void test()
     {
@@ -79,6 +79,7 @@ public class SceneTrans : MonoBehaviour {
             Stage_Canvas.gameObject.SetActive(true);
         }
         else entry.gameObject.SetActive(true);
+        click_check = 2;
     }
     public void Trans_Stage3()
     {
@@ -88,6 +89,7 @@ public class SceneTrans : MonoBehaviour {
             Stage_Canvas.gameObject.SetActive(true);
         }
         else entry.gameObject.SetActive(true);
+        click_check = 3;
     }
     public void Trans_Stage4()
     {
@@ -97,6 +99,7 @@ public class SceneTrans : MonoBehaviour {
             Stage_Canvas.gameObject.SetActive(true);
         }
         else entry.gameObject.SetActive(true);
+        click_check = 4;
     }
     public void Close_Stage()
     {
@@ -127,4 +130,9 @@ public class SceneTrans : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public int get_check_click()
+    {
+        return click_check;
+    }
 }
