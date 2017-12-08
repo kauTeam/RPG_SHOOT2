@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_SHOOT2.Plugins", "RPG_SHOOT2.Plugins.csproj", "{8ED9C5DE-D380-13F5-780C-D62B61A40DFB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG_SHOOT2", "RPG_SHOOT2.csproj", "{7409CF94-5B7E-1BB9-92A4-A34A89C2C716}"

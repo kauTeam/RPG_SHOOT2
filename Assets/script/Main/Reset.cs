@@ -95,17 +95,17 @@ public class Reset : MonoBehaviour {
 		PlayerPrefs.SetInt ("max_mp", 45);
 		PlayerPrefs.SetInt ("max_mp_recover", 5);
 
-		PlayerPrefs.SetInt ("useful_stat", 30);
+		PlayerPrefs.SetInt ("useful_stat", 100);
 
         PlayerPrefs.SetInt("ticket", 1);
-        PlayerPrefs.SetInt ("stage", 201);
-		PlayerPrefs.SetString ("character_have", "0,1,2");
+        PlayerPrefs.SetInt ("stage", 410);
+		PlayerPrefs.SetString ("character_have", "0,1,2,3,4,5");
 		PlayerPrefs.SetInt ("level", 1);
 		PlayerPrefs.SetInt ("exp", 0);
 		
 		PlayerPrefs.SetInt ("now_character", 0);
 	
-		PlayerPrefs.SetInt ("money", 20000);
+		PlayerPrefs.SetInt ("money", 200000);
         PlayerPrefs.SetInt("cur_stage", 2);
 		
 	}
